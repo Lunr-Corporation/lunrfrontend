@@ -148,45 +148,46 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           <Image src='/images/rocketvert.png' layout='fill' objectFit='cover' alt='atmosphere' />
         </div>
         <Box   width='360px' zIndex='5' position='relative' marginTop='-1690px'>
-          <Text as='b' fontSize='50px' margin='20px' color='blue'>Sirius Rocket</Text>
+          <Text as='b' fontSize='40px' margin='20px' color='blue'>Sirius Rocket</Text>
           
         </Box>
-        <Box  width='360px' zIndex='6' position='relative' marginLeft={{ base: '0px', md: '300px' }} marginTop={{ base: '0px', md: '110px' }}>
+        <Box  width='360px' zIndex='6' position='relative'  marginTop={{ base: '0px', md: '110px' }} marginLeft={{ base: '0px', lg:'300px' }}>
           <Text as='b' fontSize='2xl' margin='20px' color='white'>Payload</Text>
-          <Text color='white' marginLeft='20px'>Designed for microgravity research</Text>
-          <Text color='blue' fontSize='xl' marginLeft='20px'>100kg/200 lb</Text>
-          <Text color='white' marginLeft='20px'>Nominal Payload Mass</Text>
+          <Text color='white' marginLeft='20px' fontSize='lg' >Designed for microgravity</Text>
+          <Text color='blue' fontSize='lg' marginLeft='20px'>100kg/200 lb</Text>
+          <Text color='white' marginLeft='20px' fontSize='lg' >Nominal Payload Mass</Text>
         </Box>
 
-        <Box width='360px' zIndex='6' position='relative' marginLeft={{ base: '0px', md: '300px' }} marginTop={{ base: '0px', md: '150px' }}>
-          <Text as='b' fontSize='2xl' margin='20px' color='white'>Avionics</Text>
-          <Text color='white' marginLeft='20px'> - Telemetry System</Text>
-          <Text color='white' marginLeft='20px'> - Power Storage and Distribution</Text>
-          <Text color='white' marginLeft='20px'> - Sensor Conditioning and Acquisition</Text>
-        </Box>
+        <Box width='360px' zIndex='6' position='relative' marginTop={{ base: '0px', md: '150px' }} marginLeft={{ base: '0px', lg:'300px' }}>
+    <Text as='b' fontSize='2xl' margin='20px' color='white'>Avionics</Text>
+    <Text color='white' marginLeft='20px' fontSize='lg'> - Telemetry System</Text>
+    <Text color='white' marginLeft='20px' fontSize='lg'> - Power Storage</Text>
+    <Text color='white' marginLeft='20px' fontSize='lg'> - Sensor Conditioning</Text>
+  </Box>
 
-        <Box   width='360px' zIndex='6' position='relative' marginLeft={{ base: '0px', md: '950px' }} marginTop={{ base: '0px', md: '5px' }}>
+        <Box  width='270px' zIndex='6' position='relative' marginLeft={{ md: '450px', sm: '0px', lg:'1120px' }} marginTop={{ base: '0px', md: '5px' }} >
           <Text as='b' fontSize='2xl' margin='20px' color='white'>Liquid Engine</Text>
-          <Text color='white' marginLeft='20px'> - Telemetry System</Text>
-          <Text color='white' marginLeft='20px'> - Power Storage and Distribution</Text>
-          <Text color='white' marginLeft='20px'> - Sensor Conditioning and Acquisition</Text>
+          <Text color='white' marginLeft='20px' fontSize='lg'> - Telemetry System</Text>
+          <Text color='white' marginLeft='20px' fontSize='lg'> - Power Storage</Text>
+          <Text color='white' marginLeft='20px' fontSize='lg'> - Sensor Conditioning</Text>
         </Box>
 
-        <Box  width='360px' zIndex='6' position='relative' marginLeft={{ base: '0px', md: '300px' }} marginTop={{ base: '0px', md: '40px' }}>
+        <Box   width='270px' zIndex='6' position='relative'  marginTop={{ base: '0px', md: '40px' }} marginLeft={{ base: '0px', lg: '300px' }}>
           <Text as='b' fontSize='2xl' margin='20px' color='white'>Recovery Bay</Text>
-          <Text color='white' marginLeft='20px'> - Reusable Second Stage</Text>
+
+          <Text color='white' marginLeft='20px' fontSize='lg'> - Reusable Second Stage</Text>
           
         </Box>
 
-        <Box  width='360px' zIndex='6' position='relative' marginLeft={{ base: '0px', md: '950px' }} marginTop={{ base: '0px', md: '5px' }}>
+        <Box  width='270px' zIndex='6' position='relative' marginLeft={{ md: '450px', sm: '150px', lg:'1120px' }} marginTop={{ base: '0px', md: '5px' }}>
           <Text as='b' fontSize='2xl' margin='20px' color='white'>Stage 1 Avionics</Text>
-          <Text color='white' marginLeft='20px'> - Telemetry System</Text>
-          <Text color='white' marginLeft='20px'> - Power Storage and Distribution</Text>
-          <Text color='white' marginLeft='20px'> - Sensor Conditioning and Acquisition</Text>
+          <Text color='white' marginLeft='20px' fontSize='lg'> - Telemetry System</Text>
+          <Text color='white' marginLeft='20px' fontSize='lg'> - Power Storage</Text>
+          <Text color='white' marginLeft='20px' > - Sensor Conditioning</Text>
         </Box>
 
 
-        <Box  width='360px' zIndex='6' position='relative' marginLeft={{ base: '0px', md: '300px' }} marginTop={{ base: '0px', md: '60px' }}>
+        <Box  width='360px' zIndex='6' position='relative'  marginTop={{ base: '0px', md: '60px' }} marginLeft={{ base: '0px', lg: '300px' }}>
           <Text as='b' fontSize='2xl' margin='20px' color='white'>Solid Engine</Text>
           <Text color='white' marginLeft='20px'> - It has parachute</Text>
           <Text color='white' marginLeft='20px'> - Reusable Second Stage</Text>
