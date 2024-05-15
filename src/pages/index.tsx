@@ -1,17 +1,85 @@
 import { Box, Button, Text, Flex, Spacer } from '@chakra-ui/react';
 import Image from 'next/image';
+import type { Container, Engine } from "tsparticles-engine";
+import Particles from "react-tsparticles";
+//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
+import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import { useCallback } from 'react';
 
 export default function Home() {
+
+  const particlesInit = useCallback(async (engine: Engine) => {
+    console.log(engine);
+
+    // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
+    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // starting from v2 you can add only the features you need reducing the bundle size
+    //await loadFull(engine);
+    await loadSlim(engine);
+}, []);
+
+const particlesLoaded = useCallback(async (container: Container | undefined) => {
+    await console.log(container);
+}, []);
+
   return (
-    <div style={{ backgroundColor: 'black' }}>
-      <Flex direction={{ base: 'column', md: 'row' }} align='center' justify='center' wrap='wrap'>
+    <div style={{ backgroundColor: 'black' }}> 
+      
+      <Flex direction={{ base: 'column', md: 'row' }} align='center' justify='center' wrap='wrap' zIndex='2'>
         <Image src='/images/logo.png' width={200} height={400} alt='logo' />
         <Text as='b' fontSize={{ base: 'xl', md: '2xl' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>About Lunr</Text>
         <Text as='b' fontSize={{ base: 'xl', md: '2xl' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Mission</Text>
         <Text as='b' fontSize={{ base: 'xl', md: '2xl' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Sirius</Text>
         <Text as='b' fontSize={{ base: 'xl', md: '2xl' }} color='blue' my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Contact</Text>
       </Flex>
-
+      <Particles
+  id="tsparticles"
+  init={particlesInit}
+  loaded={particlesLoaded}
+  options={{
+    particles: {
+      number: {
+        value: 100,
+      },
+      color: {
+        value: "#ffffff",
+      },
+      shape: {
+        type: "circle",
+      },
+      size: {
+        value: 3,
+        random: true,
+      },
+      line_linked: {
+        enable: false,
+      },
+      move: {
+        enable: true,
+        speed: 0.5,
+        direction: "none",
+        random: true,
+        straight: false,
+        out_mode: "out",
+        bounce: false,
+      },
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: {
+          enable: false,
+        },
+        onclick: {
+          enable: false,
+        },
+        resize: true,
+      },
+    },
+    retina_detect: true,
+  }}
+  style={{ position: 'absolute', zIndex: 1, width: '100%', height: '100vh' }}
+/>
       <Box bg='blue' w='100vw' h='800px' position='relative'>
         <div style={{ width: '100%', height: '100%', position: 'relative' }}>
           <Image src='/images/rockethome.jpeg' layout='fill' objectFit='cover' alt='rocket' />
@@ -70,6 +138,72 @@ export default function Home() {
           </Button>
         </Box>
       </Box>
+
+
+
+      
+      <Box w='100vw' height={{ base: '1200px', md: '1700px' }} position='relative' marginTop= '40px' >
+        
+        <div style={{ width: '100%', height: '100%', position: 'relative', padding:'10px'}} >
+          <Image src='/images/rocketvert.png' layout='fill' objectFit='cover' alt='atmosphere' />
+        </div>
+        <Box  width='1000px' zIndex='5' position='relative' marginTop='-1690px'>
+          <Text as='b' fontSize='50px' margin='20px' color='blue'>Sirius Rocket</Text>
+          <Text margin='20px'>A Vehicle of the Future. Sirius is a 2-cylinder Hybrid Rocket... sample text</Text>
+        </Box>
+        <Box  width='400px' zIndex='6' position='relative' marginLeft={{ base: '0px', md: '300px' }} marginTop={{ base: '0px', md: '130px' }}>
+          <Text as='b' fontSize='2xl' margin='20px' color='white'>Payload</Text>
+          <Text color='white' marginLeft='20px'>Designed for microgravity research and technology development</Text>
+          <Text color='blue' fontSize='xl' marginLeft='20px'>100kg/200 lb</Text>
+          <Text color='white' marginLeft='20px'>Nominal Payload Mass</Text>
+        </Box>
+
+        <Box width='400px' zIndex='6' position='relative' marginLeft={{ base: '0px', md: '300px' }} marginTop={{ base: '0px', md: '150px' }}>
+          <Text as='b' fontSize='2xl' margin='20px' color='white'>Avionics</Text>
+          <Text color='white' marginLeft='20px'> - Telemetry System</Text>
+          <Text color='white' marginLeft='20px'> - Power Storage and Distribution</Text>
+          <Text color='white' marginLeft='20px'> - Sensor Conditioning and Acquisition</Text>
+        </Box>
+
+        <Box  width='400px' zIndex='6' position='relative' marginLeft={{ base: '0px', md: '950px' }} marginTop={{ base: '0px', md: '5px' }}>
+          <Text as='b' fontSize='2xl' margin='20px' color='white'>Liquid Engine</Text>
+          <Text color='white' marginLeft='20px'> - Telemetry System</Text>
+          <Text color='white' marginLeft='20px'> - Power Storage and Distribution</Text>
+          <Text color='white' marginLeft='20px'> - Sensor Conditioning and Acquisition</Text>
+        </Box>
+
+        <Box  width='400px' zIndex='6' position='relative' marginLeft={{ base: '0px', md: '300px' }} marginTop={{ base: '0px', md: '40px' }}>
+          <Text as='b' fontSize='2xl' margin='20px' color='white'>Recovery Bay</Text>
+          <Text color='white' marginLeft='20px'> - It has parachute</Text>
+          <Text color='white' marginLeft='20px'> - Reusable Second Stage</Text>
+          <Text color='white' marginLeft='20px'> - Rockets are nice</Text>
+        </Box>
+
+        <Box width='400px' zIndex='6' position='relative' marginLeft={{ base: '0px', md: '950px' }} marginTop={{ base: '0px', md: '5px' }}>
+          <Text as='b' fontSize='2xl' margin='20px' color='white'>Stage 1 Avionics</Text>
+          <Text color='white' marginLeft='20px'> - Telemetry System</Text>
+          <Text color='white' marginLeft='20px'> - Power Storage and Distribution</Text>
+          <Text color='white' marginLeft='20px'> - Sensor Conditioning and Acquisition</Text>
+        </Box>
+
+
+        <Box  width='400px' zIndex='6' position='relative' marginLeft={{ base: '0px', md: '300px' }} marginTop={{ base: '0px', md: '60px' }}>
+          <Text as='b' fontSize='2xl' margin='20px' color='white'>Solid Engine</Text>
+          <Text color='white' marginLeft='20px'> - It has parachute</Text>
+          <Text color='white' marginLeft='20px'> - Reusable Second Stage</Text>
+          <Text color='white' marginLeft='20px'> - Rockets are nice</Text>
+        </Box>
+
+        <div style={{ width: '100%', height: '100%', position: 'relative', opacity:'0.08'}} >
+          <Image src='/images/cloud.png' width={2000} height={100} alt='atmosphere' />
+        </div>
+        
+      </Box>
+
+      
+
+
+      
     </div>
   );
 }
