@@ -1,108 +1,75 @@
-import { Center, Text, Flex, Spacer, Box, Button } from '@chakra-ui/react';
-import { Image } from '@chakra-ui/react'
+import { Box, Button, Text, Flex, Spacer } from '@chakra-ui/react';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <div style={{ backgroundColor: 'black' }}>
-        
-        <div>
-        <Flex direction={{  md: 'row' }} align='center'>
-          <Image src='/images/logo.png' width={200} height={400} alt='logo' />
-          <Text as='b' fontSize={{ base: 'xl', md: '3xl' }} my={{ base: 4, md: 2 }} mx={{ base: 5, md: 20 }}>About Lunr</Text>
-          <Text as='b' fontSize={{ base: 'xl', md: '3xl' }} my={{ base: 4, md: 0 }} mx={{ base: 5, md: 20 }}>Mission</Text>
-          <Text as='b' fontSize={{ base: 'xl', md: '3xl' }} my={{ base: 4, md: 0 }} mx={{ base: 5, md: 20 }}>Sirius</Text>
-          <Text as='b' fontSize={{ base: 'xl', md: '3xl' }} color='blue' my={{ base: 4, md: 0 }} mx={{ base: 5, md: 20 }}>Contact</Text>
-        </Flex>
+      <Flex direction={{ base: 'column', md: 'row' }} align='center' justify='center' wrap='wrap'>
+        <Image src='/images/logo.png' width={200} height={400} alt='logo' />
+        <Text as='b' fontSize={{ base: 'xl', md: '2xl' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>About Lunr</Text>
+        <Text as='b' fontSize={{ base: 'xl', md: '2xl' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Mission</Text>
+        <Text as='b' fontSize={{ base: 'xl', md: '2xl' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Sirius</Text>
+        <Text as='b' fontSize={{ base: 'xl', md: '2xl' }} color='blue' my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Contact</Text>
+      </Flex>
+
+      <Box bg='blue' w='100vw' h='800px' position='relative'>
+        <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+          <Image src='/images/rockethome.jpeg' layout='fill' objectFit='cover' alt='rocket' />
         </div>
-        
-        <Center>
-        <Box bg='blue' w='200%' h='800px' position='relative' marginTop='-40px' width={{ base: '4000px', md: '100%' }}>
-         
-
-            <Image src='https://bit.ly/dan-abramov' alt='Dan Abramov' />
-
-          
-          <Center>
-          <Box  position='absolute' bottom='0' mb='40px'> 
-            <Button backgroundColor="transparent" border="2px solid white" p='30px'>
-              <Text as='b' fontSize='2xl'>Learn More</Text>
-            </Button>
-          </Box>
-        </Center>
+        <Box position='absolute' bottom='0' width='100%' mb='40px' display='flex' justifyContent='center'>
+          <Button backgroundColor="transparent" border="2px solid white" p='30px'>
+            <Text as='b' fontSize='2xl'>Learn More</Text>
+          </Button>
         </Box>
-        </Center>
-      
+      </Box>
 
-      
+      <Box bg='none' w='100vw' h='800px' position='relative'>
+        <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+          <Image src='/images/atmosphere.jpeg' layout='fill' objectFit='cover' alt='atmosphere' />
+        </div>
+        <Box
+          marginTop='40px'
+          position='absolute'
+          top={{ base: '10px', md: '20px' }}
+          right={{ base: '10px', md: '20px' }}
+          p={4}
+          bg='transparent'
+          color='white'
+          maxW={{ base: '90%', md: '40%' }} // Ensures the box doesn't exceed the image width
+        >
+          <Text bg='none' as='b' fontSize={{ base: 'md', md: 'xl' }}>Re-Inventing What it Means to Touch The Sky</Text>
+          <Text mt={2}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a quam ultricies, placerat lorem at, lacinia mauris. Nulla congue massa vel molestie fermentum. Donec nec massa in velit posuere consectetur eleifend sed massa. Suspendisse tincidunt dui quis augue fringilla, cursus auctor nibh placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ut turpis cursus, hendrerit leo et, condimentum felis. Mauris aliquam urna justo, sed varius neque sodales eu.
+          </Text>
+          <Button backgroundColor="transparent" border="2px solid white" p='30px' marginTop='30px'>
+            <Text as='b' fontSize='2xl'>Learn More</Text>
+          </Button>
 
-      <Center my='80px'>
-        <Flex direction={{ base: 'column', md: 'row' }} align='center' justify='center'>
-          <Box p='40px' w={{ base: '100%', md: '800px' }} my={{ base: 4, md: 0 }}>
-            <Text as='b' fontSize='3xl'>Meet Sirius</Text>
-            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a quam ultricies, placerat lorem at, lacinia mauris. Nulla congue massa vel molestie fermentum. Donec nec massa in velit posuere consectetur eleifend sed massa. Suspendisse tincidunt dui quis augue fringilla, cursus auctor nibh placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ut turpis cursus, hendrerit leo et, condimentum felis. Mauris aliquam urna justo, sed varius neque sodales eu.</Text>
-          </Box>
-          <Spacer />
-          <Box bg='blue' w={{ base: '100%', md: '800px' }} h={{ base: '200px', md: '300px' }}>
-            <Box position='relative' height='100%'>
-              
-            </Box>
-          </Box>
-        </Flex>
-      </Center>
-
-      <Center my='200px'>
-        <Box bg='blue' w='100%' h='800px' position='relative'>
-          <Box
-            textAlign='left'
-            zIndex='5'
-            width={{ base: '80%', md: '400px' }}
-            top={{ base: '10%', md: '30px' }}
-            right={{ base: '5%', md: '10%' }}
-            position='absolute'
-          >
-            <Text zIndex='5' as='b' fontSize='3xl' color='white'>Re-Inventing What it Means to Touch the Stars</Text>
-            <Box width='100%' mt='20px'>
-              <Text zIndex='5' fontSize='xl' color='white'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a quam ultricies, placerat lorem at, lacinia mauris. Nulla congue massa vel molestie fermentum. Donec nec massa in velit posuere consectetur eleifend sed massa.
-              </Text>
-            </Box>
-            <Box mt='30px'>
-              <Button backgroundColor="transparent" border="2px solid white" p='30px'>
-                <Text as='b' fontSize='2xl'>Learn More</Text>
-              </Button>
-            </Box>
-          </Box>
-          <Box position='relative' height='100%'>
-            
-          </Box>
         </Box>
-      </Center>
-
-      <Center my='220px'>
-        <Flex direction={{ base: 'column', md: 'row' }} align='center' justify='center'>
-          <Box w={{ base: '100%', md: '500px' }} h='10' bg='blue.500'>
-            <Box position='absolute' width={{ base: '90%', md: '400px' }} p='20px' mt={{ base: '100px', md: '0' }}>
-              <Text as='b' fontSize='3xl'>Payload</Text>
-              <Box>
-                <Text>Designed for microgravity and research and technology development.</Text>
-              </Box>
-              <Box>
-                <Text as='b' color='blue' fontSize='3xl'>100 Kg / 200 lb</Text>
-                <Text>- Nominal Payload Mass</Text>
-                <Text>- Up to 4 Individual Payload compartments</Text>
-              </Box>
-            </Box>
-          </Box>
-          <Spacer />
-          <Box width='100%' minWidth='500px' height='150vh' position='relative'>
-            
-          </Box>
-          <Spacer />
-          <Box w={{ base: '100%', md: '500px' }} h='10' bg='blue.500' />
-        </Flex>
-      </Center>
-
-      {/* ...rest of your code... */}
+      </Box>
+      <Box bg='none' w='100vw' h='800px' position='relative'>
+        <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+          <Image src='/images/rocketimage1.jpeg' layout='fill' objectFit='cover' alt='atmosphere' />
+        </div>
+        <Box
+          marginTop='40px'
+          position='absolute'
+          top={{ base: '10px', md: '20px' }}
+          left={{ base: '10px', md: '20px' }} // Adjusted to left instead of right
+          p={4}
+          bg='transparent'
+          color='white'
+          maxW={{ base: '90%', md: '40%' }} // Ensures the box doesn't exceed the image width
+        >
+          <Text bg='none' as='b' fontSize={{ base: 'md', md: 'xl' }}>Meet Sirius</Text>
+          <Text mt={2}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a quam ultricies, placerat lorem at, lacinia mauris. Nulla congue massa vel molestie fermentum. Donec nec massa in velit posuere consectetur eleifend sed massa. Suspendisse tincidunt dui quis augue fringilla, cursus auctor nibh placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ut turpis cursus, hendrerit leo et, condimentum felis. Mauris aliquam urna justo, sed varius neque sodales eu.
+          </Text>
+          <Button backgroundColor="transparent" border="2px solid white" p='30px' marginTop='30px'>
+            <Text as='b' fontSize='2xl'>Learn More</Text>
+          </Button>
+        </Box>
+      </Box>
     </div>
   );
 }
