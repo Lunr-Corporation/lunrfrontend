@@ -7,7 +7,8 @@ import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSli
 import { useCallback } from 'react';
 import DashedLine from './dashedComponent';
 import { FaChevronDown } from 'react-icons/fa';
-import DashedOval from './dashedOval';
+import ProgressBar from './progressBar';
+import Wave from './wave';
 
 
 
@@ -148,7 +149,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         </Box>
       </Box>
 
-
+      <Wave />
       
       <Box w='100vw' height={{ base: '1200px', md: '1700px' }} position='relative'   marginTop={{ base: '510px', md: '40px' }}>
         
@@ -156,11 +157,11 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         <div style={{ width: '100%', height: '100%', position: 'relative', padding:'10px', zIndex:'10'}} >
           <Image src='/images/rocketvert.png' layout='fill' objectFit='cover' alt='atmosphere' />
         </div>
-        <Box   width='360px' zIndex='5' position='relative' marginTop='-1690px' marginBottom={{lg: '-20px', sm:'40px'}}>
-          <Text as='b' fontSize='40px' margin='20px' color='blue'>Sirius Specs</Text>
+        <Box  width='260px' zIndex='5' position='relative' marginTop='-1690px' marginBottom={{lg: '-20px', sm:'40px'}}>
+          <Text as='b' fontSize='40px' margin='20px' color='blue'>Specs</Text>
           
         </Box>
-        <Box  width='360px' zIndex='6' position='relative'  marginTop={{ base: '0px', md: '110px' }} marginLeft={{ base: '0px', lg:'300px', md:'300px' }} css={{
+        <Box  width='270px' zIndex='6' position='relative'  marginTop={{ base: '0px', md: '110px' }} marginLeft={{ base: '0px', lg:'300px', md:'300px' }} css={{
             '@media screen and (width: 1024px)': {
               marginLeft: '0px',
               
@@ -190,7 +191,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           <Text color='white' marginLeft='20px' fontSize='lg' >Nominal Payload Mass</Text>
         </Box>
 
-        <Box width='360px' zIndex='6' position='relative' marginTop={{ base: '0px', md: '150px' }} marginLeft={{ base: '0px', lg:'300px' }} css={{
+        <Box width='270px' zIndex='6' position='relative' marginTop={{ base: '0px', md: '150px' }} marginLeft={{ base: '0px', lg:'300px' }} css={{
     '@media screen and (width: 1024px)': {
       marginLeft: '0px',
       
@@ -229,7 +230,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           <Text color='white' marginLeft='20px' fontSize='lg'> - Sensor Conditioning</Text>
         </Box>
 
-        <Box   width='270px' zIndex='6' position='relative'  marginTop={{ base: '0px', md: '40px' }} marginLeft={{ base: '0px',  md:'300px' }} css={{
+        <Box  bg='red' width='270px' zIndex='6' position='relative'  marginTop={{ base: '0px', md: '40px' }} marginLeft={{ base: '0px',  md:'300px' }} css={{
     '@media screen and (width: 1024px)': {
       marginLeft: '0px',
       
@@ -243,6 +244,9 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     },
     '@media screen and (width: 853px)': {
       marginLeft:'0px'
+    },
+    '@media screen and (width: 768px)': {
+      marginLeft:'0px'
     }
     
     }}>
@@ -252,7 +256,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           
         </Box>
 
-        <Box  width='270px' zIndex='6' position='relative' marginLeft={{ md: '450px', sm: '150px', lg:'1120px' }} marginTop={{ base: '0px', md: '5px' }} css={{
+        <Box bg='red' width='270px' zIndex='6' position='relative' marginLeft={{ md: '450px', sm: '150px', lg:'1120px' }} marginTop={{ base: '0px', md: '5px' }} css={{
     '@media screen and (width: 1024px)': {
       marginLeft: '700px',
       
@@ -265,6 +269,11 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       marginLeft: '0px',
       
     },
+    '@media screen and (width: 853px)': {
+      marginLeft: '550px',
+      
+    }
+    
     
     
     
@@ -276,7 +285,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         </Box>
 
 
-        <Box  width='360px' zIndex='6' position='relative'  marginTop={{ base: '0px', md: '60px' }} marginLeft={{ base: '0px', lg: '300px' }} css={{
+        <Box bg='red' width='260px' zIndex='6' position='relative'  marginTop={{ base: '0px', md: '60px' }} marginLeft={{ base: '0px', lg: '300px' }} css={{
     '@media screen and (width: 1024px)': {
       marginLeft: '0px',
       
@@ -295,45 +304,61 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         </div>
 
         </Box>
-        <Box
-  marginLeft={{ base: '0px', sm: '0px', md: '535px', lg: '992px' }}
+        <Box bg='red' width='0px'
+  marginLeft={{ base: '0px', sm: '0px', md: '515px', lg: '972px' }}
   marginTop={{ base: '-100px', sm: '-100px', md: '-340px', lg: '-690px' }}
   zIndex='9'
   css={{
     '@media screen and (width: 360px)': {
-      marginLeft: '315px',
+      marginLeft: '295px',
       marginTop: '-50px'
     },
     '@media screen and (width: 375px)': {
-      marginLeft: '325px',
+      marginLeft: '305px',
       marginTop: '-50px'
     },
     '@media screen and (width: 390px)': {
-      marginLeft: '333px',
+      marginLeft: '313px',
       marginTop: '-50px'
     },
     '@media screen and (width: 412px)': {
-      marginLeft: '343px',
-      marginTop: '-50px'
+      marginLeft: '323px',
+      marginTop: '-70px'
     },
     '@media screen and (width: 430px)': {
-      marginLeft: '353px',
-      marginTop: '-50px'
+      marginLeft: '333px',
+      marginTop: '-50px',
     },
     '@media screen and (width: 414px)': {
-      marginLeft: '345px',
+      marginLeft: '325px',
       marginTop: '-50px'
     },
     '@media screen and (width: 1024px)': {
-      marginLeft: '640px',
+      marginLeft: '620px',
       marginTop: '-420px'
     },
     '@media screen and (width: 912px)': {
-      marginLeft: '590px',
+      marginLeft: '565px',
       
     },
     '@media screen and (width: 768px)': {
-      marginLeft: '510px',
+      marginLeft: '490px',
+      
+    },
+    '@media screen and (width: 820px)': {
+      marginLeft: '520px',
+      
+    },
+    '@media screen and (width: 540px)': {
+      marginLeft: '390px',
+      
+    },
+    '@media screen and (width: 280px)': {
+      marginLeft: '260px',
+      
+    },
+    '@media screen and (width: 853px)': {
+      marginLeft: '530px',
       
     }
   }}
@@ -358,15 +383,16 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         
       </Box>
 
+      <ProgressBar/>
 
 
       <Box marginTop='400px'>
         <Center>
-        <Text fontSize='50px' as='b' color='blue'>Mission Summary</Text>
+          <Text color='blue' fontSize='50px' as='b'> Mission </Text>
         </Center>
-
-        <Text fontSize='xl'>Mission Related Components</Text>
       </Box>
+
+
 
 
       
@@ -378,5 +404,4 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     </div>
   );
 }
-
 

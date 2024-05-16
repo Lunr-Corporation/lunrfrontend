@@ -16,18 +16,18 @@ const move = keyframes`
 
 const DashedLine = () => {
   return (
-    <Box
+    <Box 
       position="relative"
       bottom="30px"
       right="50%"
       height="1px"
       overflow="hidden"
-      width="440px"
+      width="340px"
       transform="rotate(90deg)"
-      marginLeft='-400px'
+      marginLeft='-320px'
       
     >
-      <Box
+      <Box 
         position="absolute"
         top="0"
         left="0"
