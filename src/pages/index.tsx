@@ -1,20 +1,29 @@
-import { Box, Button, Text, Flex, Spacer } from '@chakra-ui/react';
+import { Box, Button, Text, Flex, Spacer, Center } from '@chakra-ui/react';
 import Image from 'next/image';
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
 import { useCallback } from 'react';
+import DashedLine from './dashedComponent';
+import { FaChevronDown } from 'react-icons/fa';
+import DashedOval from './dashedOval';
+
+
 
 export default function Home() {
 
+  const ThreeDashedLines = () => {
+    return (
+      <Flex justify="space-between">
+        <DashedLine />
+        <DashedLine />
+        <DashedLine />
+      </Flex>
+    );
+  };
   const particlesInit = useCallback(async (engine: Engine) => {
     console.log(engine);
-
-    // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    //await loadFull(engine);
     await loadSlim(engine);
 }, []);
 
@@ -39,7 +48,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
   options={{
     particles: {
       number: {
-        value: 40,
+        value: 60,
       },
       color: {
         value: "#ffffff",
@@ -144,42 +153,122 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       <Box w='100vw' height={{ base: '1200px', md: '1700px' }} position='relative'   marginTop={{ base: '510px', md: '40px' }}>
         
         
-        <div style={{ width: '100%', height: '100%', position: 'relative', padding:'10px'}} >
+        <div style={{ width: '100%', height: '100%', position: 'relative', padding:'10px', zIndex:'10'}} >
           <Image src='/images/rocketvert.png' layout='fill' objectFit='cover' alt='atmosphere' />
         </div>
-        <Box   width='360px' zIndex='5' position='relative' marginTop='-1690px'>
-          <Text as='b' fontSize='40px' margin='20px' color='blue'>Sirius Rocket</Text>
+        <Box   width='360px' zIndex='5' position='relative' marginTop='-1690px' marginBottom={{lg: '-20px', sm:'40px'}}>
+          <Text as='b' fontSize='40px' margin='20px' color='blue'>Sirius Specs</Text>
           
         </Box>
-        <Box  width='360px' zIndex='6' position='relative'  marginTop={{ base: '0px', md: '110px' }} marginLeft={{ base: '0px', lg:'300px' }}>
+        <Box  width='360px' zIndex='6' position='relative'  marginTop={{ base: '0px', md: '110px' }} marginLeft={{ base: '0px', lg:'300px', md:'300px' }} css={{
+            '@media screen and (width: 1024px)': {
+              marginLeft: '0px',
+              
+            },
+            '@media screen and (width: 820px)': {
+              marginLeft: '0px',
+              
+            },
+            '@media screen and (width: 768px)': {
+              marginLeft: '0px',
+              
+            }, 
+            '@media screen and (width: 912px)': {
+              marginLeft: '0px',
+              
+            },
+            '@media screen and (width: 853px)': {
+              marginLeft: '0px',
+              
+            }
+            
+            
+            }}>
           <Text as='b' fontSize='2xl' margin='20px' color='white'>Payload</Text>
           <Text color='white' marginLeft='20px' fontSize='lg' >Designed for microgravity</Text>
           <Text color='blue' fontSize='lg' marginLeft='20px'>100kg/200 lb</Text>
           <Text color='white' marginLeft='20px' fontSize='lg' >Nominal Payload Mass</Text>
         </Box>
 
-        <Box width='360px' zIndex='6' position='relative' marginTop={{ base: '0px', md: '150px' }} marginLeft={{ base: '0px', lg:'300px' }}>
+        <Box width='360px' zIndex='6' position='relative' marginTop={{ base: '0px', md: '150px' }} marginLeft={{ base: '0px', lg:'300px' }} css={{
+    '@media screen and (width: 1024px)': {
+      marginLeft: '0px',
+      
+    },
+    '@media screen and (width: 912px)': {
+      marginLeft: '0px',
+      
+    }
+    
+    }}>
     <Text as='b' fontSize='2xl' margin='20px' color='white'>Avionics</Text>
     <Text color='white' marginLeft='20px' fontSize='lg'> - Telemetry System</Text>
     <Text color='white' marginLeft='20px' fontSize='lg'> - Power Storage</Text>
     <Text color='white' marginLeft='20px' fontSize='lg'> - Sensor Conditioning</Text>
   </Box>
 
-        <Box  width='270px' zIndex='6' position='relative' marginLeft={{ md: '450px', sm: '0px', lg:'1120px' }} marginTop={{ base: '0px', md: '5px' }} >
+        <Box  width='270px' zIndex='6' position='relative' marginLeft={{ md: '450px', sm: '0px', lg:'1120px' }} marginTop={{ base: '0px', md: '5px' }} css={{
+    '@media screen and (width: 1024px)': {
+      marginLeft: '700px',
+      
+    },
+    '@media screen and (width: 912px)': {
+      marginLeft: '580px',
+      
+    }, 
+    '@media screen and (width: 853px)': {
+      marginLeft:'550px'
+    },
+    
+    
+    
+    }}>
           <Text as='b' fontSize='2xl' margin='20px' color='white'>Liquid Engine</Text>
           <Text color='white' marginLeft='20px' fontSize='lg'> - Telemetry System</Text>
           <Text color='white' marginLeft='20px' fontSize='lg'> - Power Storage</Text>
           <Text color='white' marginLeft='20px' fontSize='lg'> - Sensor Conditioning</Text>
         </Box>
 
-        <Box   width='270px' zIndex='6' position='relative'  marginTop={{ base: '0px', md: '40px' }} marginLeft={{ base: '0px', lg: '300px' }}>
+        <Box   width='270px' zIndex='6' position='relative'  marginTop={{ base: '0px', md: '40px' }} marginLeft={{ base: '0px',  md:'300px' }} css={{
+    '@media screen and (width: 1024px)': {
+      marginLeft: '0px',
+      
+    },
+    '@media screen and (width: 912px)': {
+      marginLeft: '0px',
+      
+    },
+    '@media screen and (width: 820px)': {
+      marginLeft:'0px'
+    },
+    '@media screen and (width: 853px)': {
+      marginLeft:'0px'
+    }
+    
+    }}>
           <Text as='b' fontSize='2xl' margin='20px' color='white'>Recovery Bay</Text>
 
           <Text color='white' marginLeft='20px' fontSize='lg'> - Reusable Second Stage</Text>
           
         </Box>
 
-        <Box  width='270px' zIndex='6' position='relative' marginLeft={{ md: '450px', sm: '150px', lg:'1120px' }} marginTop={{ base: '0px', md: '5px' }}>
+        <Box  width='270px' zIndex='6' position='relative' marginLeft={{ md: '450px', sm: '150px', lg:'1120px' }} marginTop={{ base: '0px', md: '5px' }} css={{
+    '@media screen and (width: 1024px)': {
+      marginLeft: '700px',
+      
+    },
+    '@media screen and (width: 912px)': {
+      marginLeft: '580px',
+      
+    },
+    '@media screen and (width: 540px)': {
+      marginLeft: '0px',
+      
+    },
+    
+    
+    
+    }}>
           <Text as='b' fontSize='2xl' margin='20px' color='white'>Stage 1 Avionics</Text>
           <Text color='white' marginLeft='20px' fontSize='lg'> - Telemetry System</Text>
           <Text color='white' marginLeft='20px' fontSize='lg'> - Power Storage</Text>
@@ -187,20 +276,100 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         </Box>
 
 
-        <Box  width='360px' zIndex='6' position='relative'  marginTop={{ base: '0px', md: '60px' }} marginLeft={{ base: '0px', lg: '300px' }}>
+        <Box  width='360px' zIndex='6' position='relative'  marginTop={{ base: '0px', md: '60px' }} marginLeft={{ base: '0px', lg: '300px' }} css={{
+    '@media screen and (width: 1024px)': {
+      marginLeft: '0px',
+      
+    }}}>
           <Text as='b' fontSize='2xl' margin='20px' color='white'>Solid Engine</Text>
           <Text color='white' marginLeft='20px'> - It has parachute</Text>
           <Text color='white' marginLeft='20px'> - Reusable Second Stage</Text>
           <Text color='white' marginLeft='20px'> - Rockets are nice</Text>
         </Box>
 
-        <Box marginTop={{ base: '704px', md: '0px' }}>
+        
+
+        <Box marginTop={{ base: '704px', md: '300px'}} marginLeft={{lg: '-125px', md:'-125px', sm:'10px'}}>
         <div style={{ width: '100%', height: '100%', position: 'relative', opacity:'0.08'}} >
           <Image src='/images/cloud.png' width={2000} height={100} alt='atmosphere' />
         </div>
+
         </Box>
+        <Box
+  marginLeft={{ base: '0px', sm: '0px', md: '535px', lg: '992px' }}
+  marginTop={{ base: '-100px', sm: '-100px', md: '-340px', lg: '-690px' }}
+  zIndex='9'
+  css={{
+    '@media screen and (width: 360px)': {
+      marginLeft: '315px',
+      marginTop: '-50px'
+    },
+    '@media screen and (width: 375px)': {
+      marginLeft: '325px',
+      marginTop: '-50px'
+    },
+    '@media screen and (width: 390px)': {
+      marginLeft: '333px',
+      marginTop: '-50px'
+    },
+    '@media screen and (width: 412px)': {
+      marginLeft: '343px',
+      marginTop: '-50px'
+    },
+    '@media screen and (width: 430px)': {
+      marginLeft: '353px',
+      marginTop: '-50px'
+    },
+    '@media screen and (width: 414px)': {
+      marginLeft: '345px',
+      marginTop: '-50px'
+    },
+    '@media screen and (width: 1024px)': {
+      marginLeft: '640px',
+      marginTop: '-420px'
+    },
+    '@media screen and (width: 912px)': {
+      marginLeft: '590px',
+      
+    },
+    '@media screen and (width: 768px)': {
+      marginLeft: '510px',
+      
+    }
+  }}
+>
+  <Flex>
+    <Box>
+      <DashedLine />
+    </Box>
+    <Box>
+      <DashedLine />
+    </Box>
+    <Box>
+      <DashedLine />
+    </Box>
+  </Flex>
+</Box>
+
+        
+
+
+        
         
       </Box>
+
+
+
+      <Box marginTop='400px'>
+        <Center>
+        <Text fontSize='50px' as='b' color='blue'>Mission Summary</Text>
+        </Center>
+
+        <Text fontSize='xl'>Mission Related Components</Text>
+      </Box>
+
+
+      
 
       
 
@@ -209,3 +378,5 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     </div>
   );
 }
+
+
