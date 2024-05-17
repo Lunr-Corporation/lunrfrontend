@@ -154,36 +154,43 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
 
       <Wave />
       
-      <Box w='90vw' height={{ base: '1200px', md: '1300px' }} position='absolute' marginLeft='90px'  marginTop={{ base: '510px', md: '200px' }}>
+      <Box w='90vw' height={{ base: '1200px', md: '1300px' }} position='absolute' marginLeft='90px'  marginTop={{ base: '510px', md: '200px' }} css={{
+        marginLeft:'0px'
+      }}>
         
-      <div style={{ backgroundColor:'red', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', position: 'relative', zIndex:'1'}} >
-    <video src='/images/insiderocket.mp4' style={{ maxWidth: '100%', maxHeight: '100%' }} autoPlay muted loop />
-  </div>
+      <div style={{  display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', position: 'relative', zIndex:'1'}} >
+        <Box css={{
+              '@media screen and (min-width: 300px) and (max-width: 500px)': {
+                position: 'relative',
+                marginLeft: '-6px',
+                marginTop:'1300px'
+                
+                
+              }
+
+        }}>
+        <video src='/images/insiderocket.mp4' style={{ maxWidth: '100%', maxHeight: '100%' }} autoPlay muted loop />
+        </Box>
+      </div>
 
         
-        <Box  width='260px' zIndex='5' position='relative' marginTop='-1290px' marginBottom={{lg: '-20px', sm:'40px'}}>
+        <Box  width='260px' zIndex='5' position='relative' marginTop='-1290px' marginBottom={{lg: '-20px', sm:'40px'}} css={{
+          '@media screen and (min-width: 300px) and (max-width: 500px)': {
+            marginTop: '-1690px',
+            
+            
+          }
+
+
+        }}>
           <Text as='b' fontSize='40px' margin='20px' color='blue'>Specs</Text>
           
         </Box>
         <Box  width='270px' zIndex='6' position='relative'  marginTop={{ base: '0px', md: '10px' }} marginLeft={{ base: '0px', lg:'300px', md:'300px' }} css={{
-            '@media screen and (width: 1024px)': {
+            '@media screen and (min-width: 300px) and (max-width: 500px)': {
               marginLeft: '0px',
+              marginBottom:'40px'
               
-            },
-            '@media screen and (width: 820px)': {
-              marginLeft: '0px',
-              
-            },
-            '@media screen and (width: 768px)': {
-              marginLeft: '0px',
-              
-            }, 
-            '@media screen and (width: 912px)': {
-              marginLeft: '0px',
-              
-            },
-            '@media screen and (width: 853px)': {
-              marginLeft: '0px',
               
             }
             
@@ -196,15 +203,13 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           <Text color='white' marginLeft='20px' fontSize='lg'>Payload Power Supply Based on Customer Requirements</Text>
         </Box>
 
-        <Box bg='red'width='270px' zIndex='6' position='relative' marginTop={{ base: '0px', md: '60px' }} marginLeft={{ base: '0px', lg:'300px' }} css={{
-    '@media screen and (width: 1024px)': {
-      marginLeft: '0px',
-      
-    },
-    '@media screen and (width: 912px)': {
-      marginLeft: '0px',
-      
-    }
+        <Box width='270px' zIndex='6' position='relative' marginTop={{ base: '0px', md: '60px' }} marginLeft={{ base: '0px', lg:'300px' }} css={{
+            '@media screen and (min-width: 300px) and (max-width: 500px)': {
+              marginLeft: '0px',
+              marginBottom:'40px'
+              
+              
+            }
     
     }}>
     <Text as='b' fontSize='2xl' margin='20px' color='white'>Avionics</Text>
@@ -218,17 +223,13 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
   </Box>
 
         <Box  width='270px' zIndex='6' position='absolute' marginLeft={{ md: '450px', sm: '0px', lg:'1120px' }} marginTop={{ base: '0px', md: '-310px' }} css={{
-    '@media screen and (width: 1024px)': {
-      marginLeft: '700px',
-      
-    },
-    '@media screen and (width: 912px)': {
-      marginLeft: '580px',
-      
-    }, 
-    '@media screen and (width: 853px)': {
-      marginLeft:'550px'
-    },
+          '@media screen and (min-width: 300px) and (max-width: 500px)': {
+            position: 'relative',
+            marginLeft: '0px',
+            marginBottom:'60px'
+            
+            
+          }
     
     
     
@@ -241,25 +242,14 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           
         </Box>
 
-        <Box  bg='red' width='270px' zIndex='6' position='absolute'  marginTop={{ base: '0px', md: '60px' }} marginLeft={{ base: '0px',  md:'300px' }} css={{
-    '@media screen and (width: 1024px)': {
-      marginLeft: '0px',
-      
-    },
-    '@media screen and (width: 912px)': {
-      marginLeft: '0px',
-      
-    },
-    '@media screen and (width: 820px)': {
-      marginLeft:'0px'
-    },
-    '@media screen and (width: 853px)': {
-      marginLeft:'0px'
-    },
-    '@media screen and (width: 768px)': {
-      marginLeft:'0px'
-    }
-    
+        <Box width='270px' zIndex='6' position='absolute'  marginTop={{ base: '0px', md: '60px' }} marginLeft={{ base: '0px',  md:'300px' }} css={{
+            '@media screen and (min-width: 300px) and (max-width: 500px)': {
+              position: 'relative',
+              marginLeft: '0px',
+              marginBottom:'60px'
+              
+              
+            }
     }}>
           <Text as='b' fontSize='2xl' margin='20px' color='white'>Recovery Bay</Text>
 
@@ -267,23 +257,14 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           
         </Box>
         
-        <Box bg='red' width='270px' zIndex='6' position='absolute' marginLeft={{ md: '450px', sm: '150px', lg:'1120px' }} marginTop={{ base: '0px', md: '250px' }} css={{
-    '@media screen and (width: 1024px)': {
-      marginLeft: '700px',
-      
-    },
-    '@media screen and (width: 912px)': {
-      marginLeft: '580px',
-      
-    },
-    '@media screen and (width: 540px)': {
-      marginLeft: '0px',
-      
-    },
-    '@media screen and (width: 853px)': {
-      marginLeft: '550px',
-      
-    }
+        <Box width='270px' zIndex='6' position='absolute' marginLeft={{ md: '450px', sm: '150px', lg:'1120px' }} marginTop={{ base: '0px', md: '250px' }} css={{
+            '@media screen and (min-width: 300px) and (max-width: 500px)': {
+              position: 'relative',
+              marginLeft: '0px',
+              marginBottom:'60px'
+              
+              
+            }
     
     
     
@@ -296,7 +277,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         </Box>
 
 
-        <Box bg='red' width='260px' zIndex='6' position='absolute'  marginTop={{ base: '0px', md: '5px' }} marginLeft={{ md: '450px', sm: '150px', lg:'1120px' }}  css={{
+        <Box width='260px' zIndex='6' position='absolute'  marginTop={{ base: '0px', md: '5px' }} marginLeft={{ md: '450px', sm: '150px', lg:'1120px' }}  css={{
     '@media screen and (width: 1024px)': {
       marginLeft: '0px',
       
@@ -314,13 +295,20 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
 
         
 
-        <Box marginTop={{ base: '704px', md: '300px'}} marginLeft={{lg: '-125px', md:'-125px', sm:'10px'}} >
+        <Box marginTop={{ base: '704px', md: '300px'}} marginLeft={{lg: '-125px', md:'-125px', sm:'10px'}} css={{
+          '@media screen and (min-width: 300px) and (max-width: 500px)': {
+            
+            marginTop:'1050px'
+            
+            
+          }
+        }}>
         <div style={{ width: '100%', height: '100%', position: 'relative', opacity:'0.08', zIndex:'10'}} >
           <Image src='/images/cloud.png' width={2000} height={100} alt='atmosphere' />
         </div>
 
         </Box>
-        
+          
 
 
 
@@ -334,41 +322,176 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       <ProgressBar/>
 
 
-      <Box marginTop='1800px'>
+      <Box marginTop='1800px' >
         <Center>
-          <Text color='blue' fontSize='50px' as='b'> Mission </Text>
+          <Text color='blue' fontSize='50px' as='b' css={{
+        '@media screen and (min-width: 300px) and (max-width: 500px)': {
+            
+         position:'absolute',
+          fontSize:'30px',
+          marginTop:'1200px'
+          
+          
+        }
+      }}> Mission </Text>
         </Center>
       </Box>
       <Center>
     
-      <Box bg='none' w='70vw' h='800px' position='relative' opacity='0.8'>
-        <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-          <Image src='/images/MissionDiagram.png' layout='fill' objectFit='cover' alt='atmosphere' />
-        </div>
+      <Box bg='none' w='90vw' h='800px' position='relative' opacity='0.8'>
+  <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+    <Box css={{
+      '@media screen and (min-width: 300px) and (max-width: 500px)': {
+            
+        marginTop:'360px'
         
-      </Box>
+        
+      }
+    }}>
+      <Image src='/images/MissionDiagram.png' layout='fill' objectFit='contain' alt='atmosphere' />
+    </Box>
+  </div>
+</Box>
       </Center>
-      <Box w='300px' position='absolute' marginTop='-650px' marginLeft='500px'>
-        <Text as='b' fontSize='2xl'>First Stage Cutoff and Separation</Text>
+      <Box w='300px' position='absolute' marginTop='-650px' marginLeft='500px' css={{
+        '@media screen and (min-width: 300px) and (max-width: 500px)': {
+            
+          marginLeft:'9px',
+          lineHeight: '2px',
+          marginTop:'-60px',
+          width:'60px'
+          
+          
+        }
+      }}>
+        <Text as='b' fontSize='2xl' css={{
+          
+          '@media screen and (min-width: 300px) and (max-width: 500px)': 
+          
+          {
+            
+            fontSize:'4px',
+            
+          }
+          
+          }}>First Stage Cutoff and Separation</Text>
       </Box>
 
-      <Box w='250px' position='absolute' marginTop='-720px' marginLeft='800px'>
-        <Text as='b' fontSize='2xl'>Second Stage Separation</Text>
+      <Box w='250px' position='absolute' marginTop='-720px' marginLeft='800px' css={{
+        '@media screen and (min-width: 300px) and (max-width: 500px)': {
+            
+          marginLeft:'140px',
+          lineHeight: '2px',
+          marginTop:'-110px',
+          width:'60px'
+          
+          
+        }
+
+      }}>
+        <Text as='b' fontSize='2xl' css={{
+          
+          '@media screen and (min-width: 300px) and (max-width: 500px)': 
+          
+          {
+            
+            fontSize:'4px',
+            
+          }
+          
+          }}>Second Stage Separation</Text>
       </Box>
 
-      <Box w='250px' position='absolute' marginTop='-770px' marginLeft='1040px'>
-        <Text as='b' fontSize='2xl'>Orbit Insertion</Text>
+      <Box w='250px' position='absolute' marginTop='-770px' marginLeft='1040px' css={{
+        '@media screen and (min-width: 300px) and (max-width: 500px)': {
+            
+          marginLeft:'240px',
+          lineHeight: '2px',
+          marginTop:'-130px',
+          width:'60px'
+          
+          
+        }
+
+      }}>
+        <Text as='b' fontSize='2xl' css={{
+          
+          '@media screen and (min-width: 300px) and (max-width: 500px)': 
+          
+          {
+            
+            fontSize:'4px',
+            
+          }
+          
+          }}>Orbit Insertion</Text>
       </Box>
 
-      <Box w='250px' position='absolute' marginTop='-550px' marginLeft='1120px'>
-        <Text as='b' fontSize='2xl'>Second Stage Burnup</Text>
+      <Box w='250px' position='absolute' marginTop='-550px' marginLeft='1120px' css={{
+        '@media screen and (min-width: 300px) and (max-width: 500px)': {
+            
+          marginLeft:'300px',
+          lineHeight: '2px',
+          marginTop:'-50px',
+          width:'40px'
+          
+          
+        }
+
+      }}>
+        <Text as='b' fontSize='2xl' css={{
+          
+          '@media screen and (min-width: 300px) and (max-width: 500px)': 
+          
+          {
+            
+            fontSize:'4px',
+            
+          }
+          
+          }}>Second Stage Burnup</Text>
       </Box>
 
-      <Box w='250px' position='absolute' marginTop='-280px' marginLeft='1040px'>
-        <Text as='b' fontSize='2xl'>First Stage Recover</Text>
+      <Box w='250px' position='absolute' marginTop='-280px' marginLeft='1040px' css={{
+        '@media screen and (min-width: 300px) and (max-width: 500px)': {
+            
+          marginLeft:'200px',
+          lineHeight: '2px',
+          marginTop:'-40px',
+          width:'40px'
+          
+          
+        }
+      }}>
+        <Text as='b' fontSize='2xl' css={{
+          
+          '@media screen and (min-width: 300px) and (max-width: 500px)': 
+          
+          {
+            
+            fontSize:'4px',
+            
+          }
+          
+          }}>First Stage Recover</Text>
       </Box>
 
-      <Box bg='linear-gradient(to bottom, rgba(0, 0, 255, 0.3), rgba(0, 0, 128, 0.3))' w='40vm' h='700' zIndex='4' position='absolute' marginTop='-840px' padding='4px' borderRight='1px solid gray'>
+
+
+
+
+      <Box bg='linear-gradient(to bottom, rgba(0, 0, 255, 0.3), rgba(0, 0, 128, 0.3))' w='40vm' h='700' zIndex='4' position='absolute' marginTop='-840px' padding='4px' borderRight='1px solid gray' css={{
+            '@media screen and (min-width: 300px) and (max-width: 500px)': {
+            
+              marginTop:'120px',
+              marginLeft:'18%'
+              
+              
+            }
+
+
+
+      }}>
         <Box  textAlign='right' padding='5px'  w='250px'>
           <Text fontSize='md' marginRight='160px'>LEO</Text>
           <Text marginTop='-25px' >600km</Text>
