@@ -1,16 +1,13 @@
+import React from 'react';
 import { Box } from '@chakra-ui/react';
 import { keyframes } from '@emotion/react';
 
-
 const move = keyframes`
   0% {
-    transform: translate3d(-200%, 0, 0);
-  }
-  60% {
-    transform: translate3d(100%, 0, 0);
+    transform: translateX(-100%);
   }
   100% {
-    transform: translate3d(100%, 0, 0);
+    transform: translateX(100%);
   }
 `;
 
@@ -18,14 +15,11 @@ const DashedLine = () => {
   return (
     <Box 
       position="relative"
-      bottom="30px"
-      right="50%"
       height="1px"
       overflow="hidden"
-      width="340px"
-      transform="rotate(90deg)"
-      marginLeft='-320px'
-      
+      width="50px"
+      alignSelf="center"
+      transform='rotate(90deg)'
     >
       <Box 
         position="absolute"
@@ -48,8 +42,6 @@ const DashedLine = () => {
         as="span"
         animation={`${move} 3s infinite`}
       />
-      
-      
     </Box>
   );
 };

@@ -9,6 +9,8 @@ import DashedLine from './dashedComponent';
 import { FaChevronDown } from 'react-icons/fa';
 import ProgressBar from './progressBar';
 import Wave from './wave';
+import LearnMore from './learnMore';
+import Link from 'next/link'
 
 
 
@@ -96,7 +98,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         </div>
         <Box position='absolute' bottom='0' width='100%' mb='40px' display='flex' justifyContent='center'>
           <Button backgroundColor="transparent" border="2px solid white" p='30px'>
-            <Text as='b' fontSize='2xl'>Learn More</Text>
+            <Link href='./learnMore'><Text as='b' fontSize='2xl'>Learn More</Text></Link>
           </Button>
         </Box>
       </Box>
@@ -117,7 +119,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         >
           <Text bg='none' as='b' fontSize={{ base: 'md', md: 'xl' }}>Re-Inventing What it Means to Touch The Sky</Text>
           <Text mt={2}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a quam ultricies, placerat lorem at, lacinia mauris. Nulla congue massa vel molestie fermentum. Donec nec massa in velit posuere consectetur eleifend sed massa. Suspendisse tincidunt dui quis augue fringilla, cursus auctor nibh placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ut turpis cursus, hendrerit leo et, condimentum felis. Mauris aliquam urna justo, sed varius neque sodales eu.
+            Lunr aims to touch the stars by launching to LEO at 600 km in altitude even in the frigid temperatures of Canada. Lunr wants redefine what space-travel is and that it is possible to do so anywhere rather than a select few countries.
           </Text>
           <Button backgroundColor="transparent" border="2px solid white" p='30px' marginTop='30px'>
             <Text as='b' fontSize='2xl'>Learn More</Text>
@@ -126,7 +128,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         </Box>
       </Box>
       <Box bg='none' w='100vw' h='800px' position='relative'>
-        <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+        <div style={{ width: '100%', height: '100%', position: 'relative', zIndex:'20' }}>
           <Image src='/images/rocketimage1.jpeg' layout='fill' objectFit='cover' alt='atmosphere' />
         </div>
         <Box
@@ -138,10 +140,11 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           bg='transparent'
           color='white'
           maxW={{ base: '90%', md: '40%' }} // Ensures the box doesn't exceed the image width
+          zIndex='21'
         >
           <Text bg='none' as='b' fontSize={{ base: 'md', md: 'xl' }}>Meet Sirius</Text>
           <Text mt={2}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a quam ultricies, placerat lorem at, lacinia mauris. Nulla congue massa vel molestie fermentum. Donec nec massa in velit posuere consectetur eleifend sed massa. Suspendisse tincidunt dui quis augue fringilla, cursus auctor nibh placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ut turpis cursus, hendrerit leo et, condimentum felis. Mauris aliquam urna justo, sed varius neque sodales eu.
+            Named after the brightest star in Earth's night sky, Sirius will be a two-stage launch vehicle powered by a 9-cluster of high-performance liquid rocket engines, designed for efficient payload delivery to Low Earth Orbit (LEO) and beyond, marking a milestone as one of Canada's first orbital-class launch vehicles.
           </Text>
           <Button backgroundColor="transparent" border="2px solid white" p='30px' marginTop='30px'>
             <Text as='b' fontSize='2xl'>Learn More</Text>
@@ -151,17 +154,18 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
 
       <Wave />
       
-      <Box w='100vw' height={{ base: '1200px', md: '1700px' }} position='relative'   marginTop={{ base: '510px', md: '40px' }}>
+      <Box w='90vw' height={{ base: '1200px', md: '1300px' }} position='absolute'   marginTop={{ base: '510px', md: '200px' }}>
         
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', position: 'relative',zIndex:'1'}} >
+        <video src='/images/insiderocket.mp4' style={{ width: '100%', height: '100%' }} autoPlay muted loop />
+      </div>
+
         
-        <div style={{ width: '100%', height: '100%', position: 'relative', padding:'10px', zIndex:'10'}} >
-          <Image src='/images/rocketvert.png' layout='fill' objectFit='cover' alt='atmosphere' />
-        </div>
-        <Box  width='260px' zIndex='5' position='relative' marginTop='-1690px' marginBottom={{lg: '-20px', sm:'40px'}}>
+        <Box  width='260px' zIndex='5' position='relative' marginTop='-1290px' marginBottom={{lg: '-20px', sm:'40px'}}>
           <Text as='b' fontSize='40px' margin='20px' color='blue'>Specs</Text>
           
         </Box>
-        <Box  width='270px' zIndex='6' position='relative'  marginTop={{ base: '0px', md: '110px' }} marginLeft={{ base: '0px', lg:'300px', md:'300px' }} css={{
+        <Box  width='270px' zIndex='6' position='relative'  marginTop={{ base: '0px', md: '10px' }} marginLeft={{ base: '0px', lg:'300px', md:'300px' }} css={{
             '@media screen and (width: 1024px)': {
               marginLeft: '0px',
               
@@ -186,12 +190,13 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             
             }}>
           <Text as='b' fontSize='2xl' margin='20px' color='white'>Payload</Text>
-          <Text color='white' marginLeft='20px' fontSize='lg' >Designed for microgravity</Text>
-          <Text color='blue' fontSize='lg' marginLeft='20px'>100kg/200 lb</Text>
+          <Text color='white' marginLeft='20px' fontSize='lg' >Designed for Sclability</Text>
+          <Text color='blue' marginLeft='20px' as='b' fontSize='4xl'>200kg/441 lb</Text>
           <Text color='white' marginLeft='20px' fontSize='lg' >Nominal Payload Mass</Text>
+          <Text color='white' marginLeft='20px' fontSize='lg'>Payload Power Supply Based on Customer Requirements</Text>
         </Box>
 
-        <Box width='270px' zIndex='6' position='relative' marginTop={{ base: '0px', md: '150px' }} marginLeft={{ base: '0px', lg:'300px' }} css={{
+        <Box bg='red'width='270px' zIndex='6' position='relative' marginTop={{ base: '0px', md: '60px' }} marginLeft={{ base: '0px', lg:'300px' }} css={{
     '@media screen and (width: 1024px)': {
       marginLeft: '0px',
       
@@ -205,10 +210,14 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     <Text as='b' fontSize='2xl' margin='20px' color='white'>Avionics</Text>
     <Text color='white' marginLeft='20px' fontSize='lg'> - Telemetry System</Text>
     <Text color='white' marginLeft='20px' fontSize='lg'> - Power Storage</Text>
-    <Text color='white' marginLeft='20px' fontSize='lg'> - Sensor Conditioning</Text>
+    <Text color='white' marginLeft='20px' fontSize='lg'> - Multiple Computers</Text>
+    <Text color='white' marginLeft='20px' fontSize='lg'> Payload</Text>
+    <Text color='white' marginLeft='20px' fontSize='lg'> First Stage</Text>
+    <Text color='white' marginLeft='20px' fontSize='lg'> Second Stage</Text>
+    <Text color='white' marginLeft='20px' fontSize='lg'> Second Stage TVC and RCS Integration</Text>
   </Box>
 
-        <Box  width='270px' zIndex='6' position='relative' marginLeft={{ md: '450px', sm: '0px', lg:'1120px' }} marginTop={{ base: '0px', md: '5px' }} css={{
+        <Box  width='270px' zIndex='6' position='absolute' marginLeft={{ md: '450px', sm: '0px', lg:'1120px' }} marginTop={{ base: '0px', md: '-310px' }} css={{
     '@media screen and (width: 1024px)': {
       marginLeft: '700px',
       
@@ -224,13 +233,15 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     
     
     }}>
+      
+
           <Text as='b' fontSize='2xl' margin='20px' color='white'>Liquid Engine</Text>
-          <Text color='white' marginLeft='20px' fontSize='lg'> - Telemetry System</Text>
-          <Text color='white' marginLeft='20px' fontSize='lg'> - Power Storage</Text>
-          <Text color='white' marginLeft='20px' fontSize='lg'> - Sensor Conditioning</Text>
+          <Text color='white' marginLeft='20px' fontSize='lg'> - RP-1 – Liquid Fuel (Fuel)</Text>
+          <Text color='white' marginLeft='20px' fontSize='lg'> - LOX – Liquid oxygen (Oxidizer)</Text>
+          
         </Box>
 
-        <Box  bg='red' width='270px' zIndex='6' position='relative'  marginTop={{ base: '0px', md: '40px' }} marginLeft={{ base: '0px',  md:'300px' }} css={{
+        <Box  bg='red' width='270px' zIndex='6' position='absolute'  marginTop={{ base: '0px', md: '60px' }} marginLeft={{ base: '0px',  md:'300px' }} css={{
     '@media screen and (width: 1024px)': {
       marginLeft: '0px',
       
@@ -252,11 +263,11 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     }}>
           <Text as='b' fontSize='2xl' margin='20px' color='white'>Recovery Bay</Text>
 
-          <Text color='white' marginLeft='20px' fontSize='lg'> - Reusable Second Stage</Text>
+          <Text color='white' marginLeft='20px' fontSize='lg'> - Parachute for Solid Propellants</Text>
           
         </Box>
-
-        <Box bg='red' width='270px' zIndex='6' position='relative' marginLeft={{ md: '450px', sm: '150px', lg:'1120px' }} marginTop={{ base: '0px', md: '5px' }} css={{
+        
+        <Box bg='red' width='270px' zIndex='6' position='absolute' marginLeft={{ md: '450px', sm: '150px', lg:'1120px' }} marginTop={{ base: '0px', md: '250px' }} css={{
     '@media screen and (width: 1024px)': {
       marginLeft: '700px',
       
@@ -278,103 +289,40 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     
     
     }}>
-          <Text as='b' fontSize='2xl' margin='20px' color='white'>Stage 1 Avionics</Text>
-          <Text color='white' marginLeft='20px' fontSize='lg'> - Telemetry System</Text>
-          <Text color='white' marginLeft='20px' fontSize='lg'> - Power Storage</Text>
-          <Text color='white' marginLeft='20px' > - Sensor Conditioning</Text>
+          <Text as='b' fontSize='2xl' margin='20px' color='white'>Aerodynamics</Text>
+          <Text color='white' marginLeft='20px' fontSize='lg'> - 4 base fins to control stability </Text>
+          <Text color='white' marginLeft='20px' fontSize='lg'> - Real time corrections</Text>
+          <Text color='white' marginLeft='20px' > - Embedded into solid Motor</Text>
         </Box>
 
 
-        <Box bg='red' width='260px' zIndex='6' position='relative'  marginTop={{ base: '0px', md: '60px' }} marginLeft={{ base: '0px', lg: '300px' }} css={{
+        <Box bg='red' width='260px' zIndex='6' position='absolute'  marginTop={{ base: '0px', md: '5px' }} marginLeft={{ md: '450px', sm: '150px', lg:'1120px' }}  css={{
     '@media screen and (width: 1024px)': {
       marginLeft: '0px',
       
     }}}>
+
+
+
+
           <Text as='b' fontSize='2xl' margin='20px' color='white'>Solid Engine</Text>
-          <Text color='white' marginLeft='20px'> - It has parachute</Text>
-          <Text color='white' marginLeft='20px'> - Reusable Second Stage</Text>
-          <Text color='white' marginLeft='20px'> - Rockets are nice</Text>
+          <Text color='white' marginLeft='20px'> - HTPB, aluminum powder</Text>
+          <Text color='white' marginLeft='20px'> - Ozone protector additives</Text>
+          <Text color='white' marginLeft='20px'> - Rod and Tube grain design </Text>
+          <Text color='white' marginLeft='20px'> - Single exit nozzle </Text>
         </Box>
 
         
 
-        <Box marginTop={{ base: '704px', md: '300px'}} marginLeft={{lg: '-125px', md:'-125px', sm:'10px'}}>
-        <div style={{ width: '100%', height: '100%', position: 'relative', opacity:'0.08'}} >
+        <Box marginTop={{ base: '704px', md: '300px'}} marginLeft={{lg: '-125px', md:'-125px', sm:'10px'}} >
+        <div style={{ width: '100%', height: '100%', position: 'relative', opacity:'0.08', zIndex:'10'}} >
           <Image src='/images/cloud.png' width={2000} height={100} alt='atmosphere' />
         </div>
 
         </Box>
-        <Box bg='red' width='0px'
-  marginLeft={{ base: '0px', sm: '0px', md: '515px', lg: '972px' }}
-  marginTop={{ base: '-100px', sm: '-100px', md: '-340px', lg: '-690px' }}
-  zIndex='9'
-  css={{
-    '@media screen and (width: 360px)': {
-      marginLeft: '295px',
-      marginTop: '-50px'
-    },
-    '@media screen and (width: 375px)': {
-      marginLeft: '305px',
-      marginTop: '-50px'
-    },
-    '@media screen and (width: 390px)': {
-      marginLeft: '313px',
-      marginTop: '-50px'
-    },
-    '@media screen and (width: 412px)': {
-      marginLeft: '323px',
-      marginTop: '-70px'
-    },
-    '@media screen and (width: 430px)': {
-      marginLeft: '333px',
-      marginTop: '-50px',
-    },
-    '@media screen and (width: 414px)': {
-      marginLeft: '325px',
-      marginTop: '-50px'
-    },
-    '@media screen and (width: 1024px)': {
-      marginLeft: '620px',
-      marginTop: '-420px'
-    },
-    '@media screen and (width: 912px)': {
-      marginLeft: '565px',
-      
-    },
-    '@media screen and (width: 768px)': {
-      marginLeft: '490px',
-      
-    },
-    '@media screen and (width: 820px)': {
-      marginLeft: '520px',
-      
-    },
-    '@media screen and (width: 540px)': {
-      marginLeft: '390px',
-      
-    },
-    '@media screen and (width: 280px)': {
-      marginLeft: '260px',
-      
-    },
-    '@media screen and (width: 853px)': {
-      marginLeft: '530px',
-      
-    }
-  }}
->
-  <Flex>
-    <Box>
-      <DashedLine />
-    </Box>
-    <Box>
-      <DashedLine />
-    </Box>
-    <Box>
-      <DashedLine />
-    </Box>
-  </Flex>
-</Box>
+        
+
+
 
         
 
