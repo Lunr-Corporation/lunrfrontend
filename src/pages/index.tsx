@@ -9,8 +9,10 @@ import DashedLine from './dashedComponent';
 import { FaChevronDown } from 'react-icons/fa';
 import ProgressBar from './progressBar';
 import Wave from './wave';
+import WaveTwo from './wave2';
 import LearnMore from './learnMore';
 import Link from 'next/link'
+
 
 
 
@@ -186,6 +188,11 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
                 marginLeft: '-6px',
                 marginTop:'-230px',
                 width:'45%'
+              }, '@media screen and (min-width:1400px)': {
+                position: 'relative',
+                marginLeft: '-6px',
+                marginTop:'-230px',
+                width:'35%'
               }
 
 
@@ -254,6 +261,10 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
               marginLeft: '140px',
               marginBottom:'20px',
               marginTop: '40px'
+            }, '@media screen and (min-width: 1400px)': {
+              marginLeft: '270px',
+              marginBottom:'20px',
+              marginTop: '70px'
             }
             
             
@@ -282,6 +293,10 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
               marginLeft: '140px',
               marginBottom:'20px',
               marginTop: '40px'
+            }, '@media screen and (min-width: 1400px)': {
+              marginLeft: '270px',
+              marginBottom:'20px',
+              marginTop: '70px'
             }
     
     }}>
@@ -316,6 +331,10 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           }, '@media screen and (min-width: 1280px) and (max-width:1400px)': {
             position: 'absolute',
             marginLeft: '690px',
+            marginBottom:'60px'
+          }, '@media screen and (min-width: 1400px)': {
+            position: 'absolute',
+            marginLeft: '950px',
             marginBottom:'60px'
           }
     
@@ -385,6 +404,10 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
               position: 'absolute',
               marginLeft: '690px',
               marginBottom:'60px'
+            }, '@media screen and (min-width: 1400px)': {
+              position: 'absolute',
+              marginLeft: '950px',
+              marginBottom:'60px'
             }
     
     
@@ -417,6 +440,10 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     '@media screen and (min-width: 1280px) and (max-width:1400px)': {
       position: 'absolute',
       marginLeft: '690px',
+      marginBottom:'60px'
+    }, '@media screen and (min-width: 1400px)': {
+      position: 'absolute',
+      marginLeft: '950px',
       marginBottom:'60px'
     }
     
@@ -455,6 +482,9 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             marginLeft:'10px'
             
 
+          }, '@media screen and (min-width: 1400px)': {
+            marginTop:'450px',
+            marginLeft:'-17px'
           }
         }}>
         <div style={{ width: '100%', height: '100%', position: 'relative', opacity:'0.08', zIndex:'10'}} >
@@ -505,7 +535,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           position:'absolute',
            fontSize:'60px',
            marginTop:'-300px'
-        }
+        }, 
          
       }}> Mission </Text>
         </Center>
@@ -852,7 +882,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
 
 
 
-
+      <WaveTwo />
 
       <Box bg='linear-gradient(to bottom, rgba(0, 0, 255, 0.3), rgba(0, 0, 128, 0.3))' w='40vm' h='700' zIndex='4' position='absolute' marginTop='-840px' padding='4px' borderRight='1px solid gray' css={{
             '@media screen and (min-width: 300px) and (max-width: 500px)': {
@@ -879,6 +909,9 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
            },'@media screen and (min-width: 1280px) and (max-width:1400px)': {
             marginTop:'-140px',
             marginLeft:'40%',
+          }, '@media screen and (min-width: 1400px)': {
+            marginTop:'150px',
+            marginLeft:'40%',
           },
             position:'absolute',
           
@@ -887,6 +920,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
 
 
       }}>
+        
         <Box  textAlign='right' padding='5px'  w='250px'>
           <Text fontSize='md' marginRight='160px'>LEO</Text>
           <Text marginTop='-25px' >600km</Text>
