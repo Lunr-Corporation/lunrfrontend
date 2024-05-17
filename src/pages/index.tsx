@@ -154,11 +154,11 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
 
       <Wave />
       
-      <Box w='90vw' height={{ base: '1200px', md: '1300px' }} position='absolute'   marginTop={{ base: '510px', md: '200px' }}>
+      <Box w='90vw' height={{ base: '1200px', md: '1300px' }} position='absolute' marginLeft='90px'  marginTop={{ base: '510px', md: '200px' }}>
         
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', position: 'relative',zIndex:'1'}} >
-        <video src='/images/insiderocket.mp4' style={{ width: '100%', height: '100%' }} autoPlay muted loop />
-      </div>
+      <div style={{ backgroundColor:'red', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', position: 'relative', zIndex:'1'}} >
+    <video src='/images/insiderocket.mp4' style={{ maxWidth: '100%', maxHeight: '100%' }} autoPlay muted loop />
+  </div>
 
         
         <Box  width='260px' zIndex='5' position='relative' marginTop='-1290px' marginBottom={{lg: '-20px', sm:'40px'}}>
@@ -334,11 +334,73 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       <ProgressBar/>
 
 
-      <Box marginTop='400px'>
+      <Box marginTop='1800px'>
         <Center>
           <Text color='blue' fontSize='50px' as='b'> Mission </Text>
         </Center>
       </Box>
+      <Center>
+    
+      <Box bg='none' w='70vw' h='800px' position='relative' opacity='0.8'>
+        <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+          <Image src='/images/MissionDiagram.png' layout='fill' objectFit='cover' alt='atmosphere' />
+        </div>
+        
+      </Box>
+      </Center>
+      <Box w='300px' position='absolute' marginTop='-650px' marginLeft='500px'>
+        <Text as='b' fontSize='2xl'>First Stage Cutoff and Separation</Text>
+      </Box>
+
+      <Box w='250px' position='absolute' marginTop='-720px' marginLeft='800px'>
+        <Text as='b' fontSize='2xl'>Second Stage Separation</Text>
+      </Box>
+
+      <Box w='250px' position='absolute' marginTop='-770px' marginLeft='1040px'>
+        <Text as='b' fontSize='2xl'>Orbit Insertion</Text>
+      </Box>
+
+      <Box w='250px' position='absolute' marginTop='-550px' marginLeft='1120px'>
+        <Text as='b' fontSize='2xl'>Second Stage Burnup</Text>
+      </Box>
+
+      <Box w='250px' position='absolute' marginTop='-280px' marginLeft='1040px'>
+        <Text as='b' fontSize='2xl'>First Stage Recover</Text>
+      </Box>
+
+      <Box bg='linear-gradient(to bottom, rgba(0, 0, 255, 0.3), rgba(0, 0, 128, 0.3))' w='40vm' h='700' zIndex='4' position='absolute' marginTop='-840px' padding='4px' borderRight='1px solid gray'>
+        <Box  textAlign='right' padding='5px'  w='250px'>
+          <Text fontSize='md' marginRight='160px'>LEO</Text>
+          <Text marginTop='-25px' >600km</Text>
+        </Box>
+        <Box textAlign='right' padding='5px' marginTop='50px' w='250px'>
+          <Text fontSize='md' marginRight='150px'>Orbit Insertion</Text>
+          <Text marginTop='-25px' >200 - 600km</Text>
+        </Box>
+        <Box textAlign='right' padding='5px' marginTop='20px' w='250px'>
+          <Text fontSize='md' marginRight='150px'>Second Stage Cutoff</Text>
+          <Text marginTop='-25px' >150 - 500km</Text>
+        </Box>
+        
+        <Box textAlign='right' padding='5px' marginTop='70px' w='250px'>
+          <Text fontSize='md' marginRight='150px'> Beginning of Microgravity</Text>
+          <Text marginTop='-25px' >80km</Text>
+        </Box>
+        <Box textAlign='right' padding='5px' marginTop='40px' w='250px'>
+          <Text fontSize='md' marginRight='150px'>First Stage Cutoff and Separation</Text>
+          <Text marginTop='-25px' >50km</Text>
+        </Box>
+        <Box  textAlign='right' padding='5px' marginTop='80px' w='250px'>
+          <Text fontSize='md' marginRight='150px'>Pitch Maneuver</Text>
+          <Text marginTop='-25px' >0.4km</Text>
+        </Box>
+        <Box textAlign='right' padding='5px' marginTop='4px' w='250px'>
+          <Text fontSize='md' marginRight='150px'>Litftoff</Text>
+          <Text marginTop='-25px' >0.8km</Text>
+        </Box>
+      </Box>
+      
+      
 
 
 
