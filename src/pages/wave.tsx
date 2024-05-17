@@ -63,6 +63,10 @@ const Wave = () => {
           '@media screen and (width: 853px)': {
             marginTop: '-182px',
             
+          },
+          '@media screen and (min-width: 1280px)': {
+            marginTop: '-182px',
+            
           }
 
 

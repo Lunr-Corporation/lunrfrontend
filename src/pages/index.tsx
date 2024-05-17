@@ -174,7 +174,15 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
                 width:'75%'
                 
                 
+              },
+              '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+                position: 'relative',
+                marginLeft: '-6px',
+                marginTop:'-230px',
+                width:'55%'
+    
               }
+
 
         }}>
         <video src='/images/insiderocket.mp4' style={{ maxWidth: '100%', maxHeight: '100%' }} autoPlay muted loop />
@@ -191,6 +199,10 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           '@media screen and (min-width: 700px) and (max-width: 920px)': {
             marginTop:'-1490px'
 
+          },
+          '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+            marginTop:'-1490px'
+
           }
 
 
@@ -198,6 +210,11 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           <Text as='b' fontSize='40px' margin='20px' color='blue' css={{
               '@media screen and (min-width: 700px) and (max-width: 920px)': {
                 fontSize:'70px'
+    
+              },
+              '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+                fontSize:'65px', 
+                
     
               }
 
@@ -214,6 +231,13 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             '@media screen and (min-width: 700px) and (max-width: 920px)': {
               marginLeft: '0px',
               marginBottom:'20px'
+  
+            },
+            '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+              marginLeft: '80px',
+              marginBottom:'20px',
+              marginTop: '20px'
+              
   
             }
             
@@ -233,6 +257,12 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
               marginBottom:'40px'
               
               
+            },
+            '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+              marginLeft: '80px',
+              marginBottom:'20px'
+              
+  
             }
     
     }}>
@@ -260,6 +290,10 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             marginBottom:'60px'
             
             
+          }, '@media screen and (min-width: 1024px) and (max-width: 1400px)':{
+            position: 'absolute',
+            marginLeft: '570px',
+            marginBottom:'60px'
           }
     
     
@@ -288,6 +322,12 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
               marginTop:'200px'
               
               
+            },
+            '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+              marginLeft: '80px',
+              marginBottom:'20px'
+              
+  
             }
     }}>
           <Text as='b' fontSize='2xl' margin='20px' color='white'>Recovery Bay</Text>
@@ -310,6 +350,10 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
               marginBottom:'60px'
               
               
+            }, '@media screen and (min-width: 1024px) and (max-width: 1400px)':{
+              position: 'absolute',
+              marginLeft: '570px',
+              marginBottom:'60px'
             }
     
     
@@ -334,6 +378,10 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       marginBottom:'60px'
       
       
+    }, '@media screen and (min-width: 1024px) and (max-width: 1400px)':{
+      position: 'absolute',
+      marginLeft: '570px',
+      marginBottom:'60px'
     }
     
     
@@ -365,6 +413,12 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             marginLeft:'10px'
             
             
+          },
+          '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+            marginTop:'520px',
+            marginLeft:'10px'
+            
+
           }
         }}>
         <div style={{ width: '100%', height: '100%', position: 'relative', opacity:'0.08', zIndex:'10'}} >
@@ -404,7 +458,15 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
            marginTop:'-700px'
            
            
-         }
+         },
+         '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+          position:'absolute',
+           fontSize:'60px',
+           marginTop:'-500px'
+          
+
+        }
+         
       }}> Mission </Text>
         </Center>
       </Box>
@@ -424,7 +486,14 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         marginTop:'-460px'
         
         
+      },
+      '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+        
+         marginTop:'-350px'
+        
+
       }
+      
     }}>
       <Image src='/images/MissionDiagram.png' layout='fill' objectFit='contain' alt='atmosphere' />
     </Box>
@@ -450,7 +519,17 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             marginTop:'-920px',
             width:'100px'
             
-          }
+          },
+          '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+        
+            marginLeft:'80px',
+            lineHeight: '18px',
+            marginTop:'-820px',
+            width:'100px'
+           
+   
+         }
+         
       }}>
         <Text as='b' fontSize='2xl' css={{
           
@@ -467,7 +546,15 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             
             fontSize:'12px',
             
-          }
+          },
+          '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+        
+            fontSize:'16px'
+           
+   
+         }
+          
+
           
           
           }}>First Stage Cutoff and Separation</Text>
@@ -491,7 +578,16 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             width:'100px'
           
           
-        }
+        },
+        '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+        
+          marginLeft:'420px',
+          lineHeight: '18px',
+          marginTop:'-950px',
+          width:'100px'
+         
+ 
+       }
 
       }}>
         <Text as='b' fontSize='2xl' css={{
@@ -509,7 +605,12 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             
             fontSize:'12px',
             
-          }
+          }, '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+        
+            fontSize:'16px'
+           
+   
+         }
           
           }}>Second Stage Separation</Text>
       </Box>
@@ -532,7 +633,16 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             width:'100px'
           
           
-        }
+        },
+        '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+        
+          marginLeft:'720px',
+          lineHeight: '18px',
+          marginTop:'-930px',
+          width:'100px'
+         
+ 
+       }
 
       }}>
         <Text as='b' fontSize='2xl' css={{
@@ -550,7 +660,13 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             
             fontSize:'12px',
             
-          }
+          },
+          '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+        
+            fontSize:'16px'
+           
+   
+         }
           
           }}>Orbit Insertion</Text>
       </Box>
@@ -573,7 +689,16 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           width:'60px'
           
           
-        }
+        },
+        '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+        
+          marginLeft:'720px',
+          lineHeight: '18px',
+          marginTop:'-750px',
+          width:'100px'
+         
+ 
+       }
 
       }}>
         <Text as='b' fontSize='2xl' css={{
@@ -587,7 +712,13 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           },
           '@media screen and (min-width: 700px) and (max-width: 920px)': {
             fontSize:'12px'
-          }
+          },
+          '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+        
+            fontSize:'16px'
+           
+   
+         }
           
           }}>Second Stage Burnup</Text>
       </Box>
@@ -610,7 +741,16 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           width:'60px'
           
           
-        }
+        },
+        '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+        
+          marginLeft:'520px',
+          lineHeight: '18px',
+          marginTop:'-750px',
+          width:'100px'
+         
+ 
+       }
       }}>
         <Text as='b' fontSize='2xl' css={{
           
@@ -627,7 +767,13 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             
             fontSize:'12px',
             
-          }
+          },
+          '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+        
+            fontSize:'16px'
+           
+   
+         }
           
           
           
@@ -653,7 +799,17 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
               
               
               
-            }
+            },
+            '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+        
+              marginTop:'-440px',
+              marginLeft:'35%',
+             
+     
+           },
+            position:'absolute',
+          
+           marginTop:'-100px'
 
 
 
