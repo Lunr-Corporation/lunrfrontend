@@ -41,10 +41,10 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       
       <Flex direction={{ base: 'column', md: 'row' }} align='center' justify='center' wrap='wrap' zIndex='2'>
         <Image src='/images/logo.png' width={200} height={400} alt='logo' />
-        <Text as='b' fontSize={{ base: 'xl', md: '2xl' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>About Lunr</Text>
-        <Text as='b' fontSize={{ base: 'xl', md: '2xl' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Mission</Text>
-        <Text as='b' fontSize={{ base: 'xl', md: '2xl' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Sirius</Text>
-        <Text as='b' fontSize={{ base: 'xl', md: '2xl' }} color='blue' my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Contact</Text>
+        <Text as='b' fontFamily='Poppins' fontSize={{ base: 'xl', md: '2xl' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>About Lunr</Text>
+        <Text as='b' fontFamily='Poppins' fontSize={{ base: 'xl', md: '2xl' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Mission</Text>
+        <Text as='b' fontFamily='Poppins' fontSize={{ base: 'xl', md: '2xl' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Sirius</Text>
+        <Text as='b' fontFamily='Poppins' fontSize={{ base: 'xl', md: '2xl' }} color='blue' my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Contact</Text>
       </Flex>
       <Particles
   id="tsparticles"
@@ -100,7 +100,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         </div>
         <Box position='absolute' bottom='0' width='100%' mb='40px' display='flex' justifyContent='center'>
           <Button backgroundColor="transparent" border="2px solid white" p='30px'>
-            <Link href='./learnMore'><Text as='b' fontSize='2xl'>Learn More</Text></Link>
+            <Link href='./learnMore'><Text fontFamily='Poppins' as='b' fontSize='2xl'>Learn More</Text></Link>
           </Button>
         </Box>
       </Box>
@@ -119,12 +119,12 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           color='white'
           maxW={{ base: '90%', md: '40%' }} // Ensures the box doesn't exceed the image width
         >
-          <Text bg='none' as='b' fontSize={{ base: 'md', md: 'xl' }}>Re-Inventing What it Means to Touch The Sky</Text>
-          <Text mt={2}>
+          <Text bg='none' as='b' fontSize={{ base: 'md', md: 'xl' }} fontFamily='Poppins'>Re-Inventing What it Means to Touch The Sky</Text>
+          <Text mt={2} fontFamily='Poppins'>
             Lunr aims to touch the stars by launching to LEO at 600 km in altitude even in the frigid temperatures of Canada. Lunr wants redefine what space-travel is and that it is possible to do so anywhere rather than a select few countries.
           </Text>
           <Button backgroundColor="transparent" border="2px solid white" p='30px' marginTop='30px'>
-            <Text as='b' fontSize='2xl'>Learn More</Text>
+            <Text as='b' fontSize='2xl' fontFamily='Poppins'>Learn More</Text>
           </Button>
 
         </Box>
@@ -144,12 +144,12 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           maxW={{ base: '90%', md: '40%' }} // Ensures the box doesn't exceed the image width
           zIndex='21'
         >
-          <Text bg='none' as='b' fontSize={{ base: 'md', md: 'xl' }}>Meet Sirius</Text>
-          <Text mt={2}>
+          <Text bg='none' as='b' fontSize={{ base: 'md', md: 'xl' }} fontFamily='Poppins'>Meet Sirius</Text>
+          <Text mt={2} fontFamily='Poppins'>
             Named after the brightest star in Earth's night sky, Sirius will be a two-stage launch vehicle powered by a 9-cluster of high-performance liquid rocket engines, designed for efficient payload delivery to Low Earth Orbit (LEO) and beyond, marking a milestone as one of Canada's first orbital-class launch vehicles.
           </Text>
           <Button backgroundColor="transparent" border="2px solid white" p='30px' marginTop='30px'>
-            <Text as='b' fontSize='2xl'>Learn More</Text>
+            <Text as='b' fontSize='2xl' fontFamily='Poppins'>Learn More</Text>
           </Button>
         </Box>
       </Box>
@@ -165,13 +165,13 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
               '@media screen and (min-width: 300px) and (max-width: 500px)': {
                 position: 'relative',
                 marginLeft: '-6px',
-                marginTop:'1300px'
+                marginTop:'1500px'
                 
                 
               },
               '@media screen and (min-width: 700px) and (max-width: 920px)': {
                 position: 'relative',
-                marginLeft: '-6px',
+                marginLeft: '40px',
                 marginTop:'-300px',
                 width:'75%'
                 
@@ -202,7 +202,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       </div>
 
         
-        <Box  width='260px' zIndex='5' position='relative' marginTop='-1290px' marginBottom={{lg: '-20px', sm:'40px'}} css={{
+        <Box width='260px' zIndex='5' marginLeft='20px' position='relative' marginTop='-1290px' marginBottom={{lg: '-20px', sm:'40px'}} css={{
           '@media screen and (min-width: 300px) and (max-width: 500px)': {
             marginTop: '-1690px',
             
@@ -222,7 +222,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
 
 
         }}>
-          <Text as='b' fontSize='40px' margin='20px' color='blue' css={{
+          <Text as='b' fontSize='40px' margin='20px' color='blue' fontFamily='Poppins' css={{
               '@media screen and (min-width: 700px) and (max-width: 920px)': {
                 fontSize:'70px'
     
@@ -235,14 +235,14 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
                 fontSize:'65px',
                 
               }
-
-          }}>Specs</Text>
+          }}>Sirius Specs</Text>
           
         </Box>
         <Box  width='270px' zIndex='6' position='relative'  marginTop={{ base: '0px', md: '10px' }} marginLeft={{ base: '0px', lg:'300px', md:'300px' }} css={{
             '@media screen and (min-width: 300px) and (max-width: 500px)': {
               marginLeft: '0px',
-              marginBottom:'40px'
+              marginBottom:'40px',
+              marginTop:'40px'
               
               
             },
@@ -270,11 +270,11 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             
             }}>
           
-          <Text as='b' fontSize='2xl' margin='20px' color='white'>Payload</Text>
-          <Text color='white' marginLeft='20px' fontSize='lg' >Designed for Sclability</Text>
-          <Text color='blue' marginLeft='20px' as='b' fontSize='4xl'>200kg/441 lb</Text>
-          <Text color='white' marginLeft='20px' fontSize='lg' >Nominal Payload Mass</Text>
-          <Text color='white' marginLeft='20px' fontSize='lg'>Payload Power Supply Based on Customer Requirements</Text>
+          <Text as='b' fontFamily='Poppins' fontSize='2xl' margin='20px' color='white'>Payload</Text>
+          <Text color='white' fontFamily='Poppins'  marginLeft='20px' fontSize='lg' >Designed for Sclability</Text>
+          <Text color='blue' fontFamily='Poppins'  marginLeft='20px' as='b' fontSize='4xl'>200kg/441 lb</Text>
+          <Text color='white' fontFamily='Poppins'  marginLeft='20px' fontSize='lg' >Nominal Payload Mass</Text>
+          <Text color='white' fontFamily='Poppins'  marginLeft='20px' fontSize='lg'>Payload Power Supply Based on Customer Requirements</Text>
         </Box>
 
         <Box width='270px' zIndex='6' position='relative' marginTop={{ base: '0px', md: '60px' }} marginLeft={{ base: '0px', lg:'300px' }} css={{
@@ -300,17 +300,17 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             }
     
     }}>
-    <Text as='b' fontSize='2xl' margin='20px' color='white'>Avionics</Text>
-    <Text color='white' marginLeft='20px' fontSize='lg'> - Telemetry System</Text>
-    <Text color='white' marginLeft='20px' fontSize='lg'> - Power Storage</Text>
-    <Text color='white' marginLeft='20px' fontSize='lg'> - Multiple Computers</Text>
-    <Text color='white' marginLeft='20px' fontSize='lg'> Payload</Text>
-    <Text color='white' marginLeft='20px' fontSize='lg'> First Stage</Text>
-    <Text color='white' marginLeft='20px' fontSize='lg'> Second Stage</Text>
-    <Text color='white' marginLeft='20px' fontSize='lg'> Second Stage TVC and RCS Integration</Text>
+    <Text fontFamily='Poppins'  as='b' fontSize='2xl' margin='20px' color='white'>Avionics</Text>
+    <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - Telemetry System</Text>
+    <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - Power Storage</Text>
+    <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - Multiple Computers</Text>
+    <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> Payload</Text>
+    <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> First Stage</Text>
+    <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> Second Stage</Text>
+    <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> Second Stage TVC and RCS Integration</Text>
   </Box>
 
-        <Box  width='270px' zIndex='6' position='absolute' marginLeft={{ md: '450px', sm: '0px', lg:'1120px' }} marginTop={{ base: '0px', md: '-310px' }} css={{
+        <Box width='270px' zIndex='6' position='absolute' marginLeft={{ md: '450px', sm: '0px', lg:'1120px' }} marginTop={{ base: '0px', md: '-310px' }} css={{
           '@media screen and (min-width: 300px) and (max-width: 500px)': {
             position: 'relative',
             marginLeft: '0px',
@@ -320,7 +320,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           }, 
           '@media screen and (min-width: 700px) and (max-width: 920px)': {
             position: 'relative',
-            marginLeft: '510px',
+            marginLeft: '540px',
             marginBottom:'60px'
             
             
@@ -335,7 +335,8 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           }, '@media screen and (min-width: 1400px)': {
             position: 'absolute',
             marginLeft: '950px',
-            marginBottom:'60px'
+            marginBottom:'60px',
+            marginTop:'-400px'
           }
     
     
@@ -343,9 +344,9 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     }}>
       
 
-          <Text as='b' fontSize='2xl' margin='20px' color='white'>Liquid Engine</Text>
-          <Text color='white' marginLeft='20px' fontSize='lg'> - RP-1 – Liquid Fuel (Fuel)</Text>
-          <Text color='white' marginLeft='20px' fontSize='lg'> - LOX – Liquid oxygen (Oxidizer)</Text>
+          <Text fontFamily='Poppins'  as='b' fontSize='2xl' margin='20px' color='white'>Liquid Engine</Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - RP-1 – Liquid Fuel (Fuel)</Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - LOX – Liquid oxygen (Oxidizer)</Text>
           
         </Box>
 
@@ -376,9 +377,9 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
               marginTop: '40px'
             }
     }}>
-          <Text as='b' fontSize='2xl' margin='20px' color='white'>Recovery Bay</Text>
+          <Text fontFamily='Poppins'  as='b' fontSize='2xl' margin='20px' color='white'>Recovery Bay</Text>
 
-          <Text color='white' marginLeft='20px' fontSize='lg'> - Parachute for Solid Propellants</Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - Parachute for Solid Propellants</Text>
           
         </Box>
         
@@ -392,7 +393,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             },
             '@media screen and (min-width: 700px) and (max-width: 920px)': {
               position: 'absolute',
-              marginLeft: '510px',
+              marginLeft: '540px',
               marginBottom:'60px'
               
               
@@ -407,17 +408,19 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             }, '@media screen and (min-width: 1400px)': {
               position: 'absolute',
               marginLeft: '950px',
-              marginBottom:'60px'
+              marginBottom:'60px',
+              marginTop: '7px'
+            
             }
     
     
     
     
     }}>
-          <Text as='b' fontSize='2xl' margin='20px' color='white'>Aerodynamics</Text>
-          <Text color='white' marginLeft='20px' fontSize='lg'> - 4 base fins to control stability </Text>
-          <Text color='white' marginLeft='20px' fontSize='lg'> - Real time corrections</Text>
-          <Text color='white' marginLeft='20px' > - Embedded into solid Motor</Text>
+          <Text fontFamily='Poppins'  as='b' fontSize='2xl' margin='20px' color='white'>Aerodynamics</Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - 4 base fins to control stability </Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - Real time corrections</Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px' > - Embedded into solid Motor</Text>
         </Box>
 
 
@@ -428,7 +431,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     },
     '@media screen and (min-width: 700px) and (max-width: 920px)': {
       position: 'relative',
-      marginLeft: '510px',
+      marginLeft: '540px',
       marginBottom:'60px'
       
       
@@ -444,7 +447,8 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     }, '@media screen and (min-width: 1400px)': {
       position: 'absolute',
       marginLeft: '950px',
-      marginBottom:'60px'
+      marginBottom:'60px',
+      marginTop:'-200px'
     }
     
     
@@ -454,11 +458,11 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
 
 
 
-          <Text as='b' fontSize='2xl' margin='20px' color='white'>Solid Engine</Text>
-          <Text color='white' marginLeft='20px'> - HTPB, aluminum powder</Text>
-          <Text color='white' marginLeft='20px'> - Ozone protector additives</Text>
-          <Text color='white' marginLeft='20px'> - Rod and Tube grain design </Text>
-          <Text color='white' marginLeft='20px'> - Single exit nozzle </Text>
+          <Text fontFamily='Poppins'  as='b' fontSize='2xl' margin='20px' color='white'>Solid Engine</Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px'> - HTPB, aluminum powder</Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px'> - Ozone protector additives</Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px'> - Rod and Tube grain design </Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px'> - Single exit nozzle </Text>
         </Box>
 
         
@@ -466,24 +470,24 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         <Box marginTop={{ base: '704px', md: '300px'}} marginLeft={{lg: '-125px', md:'-125px', sm:'10px'}} css={{
           '@media screen and (min-width: 300px) and (max-width: 500px)': {
             
-            marginTop:'1050px'
+            marginTop:'1020px'
             
             
           },
           '@media screen and (min-width: 700px) and (max-width: 920px)': {
             
-            marginTop:'450px',
+            marginTop:'370px',
             marginLeft:'10px'
             
             
           },
           '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
-            marginTop:'520px',
+            marginTop:'400px',
             marginLeft:'10px'
             
 
           }, '@media screen and (min-width: 1400px)': {
-            marginTop:'450px',
+            marginTop:'320px',
             marginLeft:'-17px'
           }
         }}>
@@ -508,7 +512,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
 
       <Box marginTop='1800px' >
         <Center>
-          <Text color='blue' fontSize='50px' as='b' css={{
+          <Text color='blue' fontSize='50px' as='b' fontFamily='Poppins' css={{
         '@media screen and (min-width: 300px) and (max-width: 500px)': {
             
          position:'absolute',
@@ -521,14 +525,14 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             
           position:'absolute',
            fontSize:'50px',
-           marginTop:'-700px'
+           marginTop:'-620px'
            
            
          },
          '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
           position:'absolute',
            fontSize:'60px',
-           marginTop:'-500px'
+           marginTop:'-540px'
           
 
         }, '@media screen and (min-width: 1280px) and (max-width:1400px)': {
@@ -609,7 +613,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         }
          
       }}>
-        <Text as='b' fontSize='2xl' css={{
+        <Text fontFamily='Poppins' as='b' fontSize='2xl' css={{
           
           '@media screen and (min-width: 300px) and (max-width: 500px)': 
           
@@ -673,7 +677,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       }
 
       }}>
-        <Text as='b' fontSize='2xl' css={{
+        <Text fontFamily='Poppins' as='b' fontSize='2xl' css={{
           
           '@media screen and (min-width: 300px) and (max-width: 500px)': 
           
@@ -733,7 +737,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       }
 
       }}>
-        <Text as='b' fontSize='2xl' css={{
+        <Text fontFamily='Poppins' as='b' fontSize='2xl' css={{
           
           '@media screen and (min-width: 300px) and (max-width: 500px)': 
           
@@ -792,10 +796,15 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           lineHeight: '18px',
           marginTop:'-710px',
           width:'100px'
+      }, '@media screen and (min-width: 1400px)': {
+        marginLeft:'1090px',
+          lineHeight: '24px',
+          marginTop:'-595px',
+          width:'100px'
       }
 
       }}>
-        <Text as='b' fontSize='2xl' css={{
+        <Text fontFamily='Poppins' as='b' fontSize='2xl' css={{
           
           '@media screen and (min-width: 300px) and (max-width: 500px)': 
           
@@ -851,7 +860,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         width:'100px'
       }
       }}>
-        <Text as='b' fontSize='2xl' css={{
+        <Text fontFamily='Poppins' as='b' fontSize='2xl' css={{
           
           '@media screen and (min-width: 300px) and (max-width: 500px)': 
           
@@ -922,35 +931,85 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       }}>
         
         <Box  textAlign='right' padding='5px'  w='250px'>
-          <Text fontSize='md' marginRight='160px'>LEO</Text>
-          <Text marginTop='-25px' >600km</Text>
+          <Text fontFamily='Poppins' fontSize='md' marginRight='160px'>LEO</Text>
+          <Text fontFamily='Poppins' marginTop='-25px' >600km</Text>
         </Box>
         <Box textAlign='right' padding='5px' marginTop='50px' w='250px'>
-          <Text fontSize='md' marginRight='150px'>Orbit Insertion</Text>
-          <Text marginTop='-25px' >200 - 600km</Text>
+          <Text fontFamily='Poppins' fontSize='md' marginRight='150px'>Orbit Insertion</Text>
+          <Text fontFamily='Poppins' marginTop='-25px' >200 - 600km</Text>
         </Box>
         <Box textAlign='right' padding='5px' marginTop='20px' w='250px'>
-          <Text fontSize='md' marginRight='150px'>Second Stage Cutoff</Text>
-          <Text marginTop='-25px' >150 - 500km</Text>
+          <Text fontFamily='Poppins' fontSize='md' marginRight='150px'>Second Stage Cutoff</Text>
+          <Text fontFamily='Poppins' marginTop='-25px' >150 - 500km</Text>
         </Box>
         
-        <Box textAlign='right' padding='5px' marginTop='70px' w='250px'>
-          <Text fontSize='md' marginRight='150px'> Beginning of Microgravity</Text>
-          <Text marginTop='-25px' >80km</Text>
+        <Box textAlign='right' padding='5px' marginTop='70px' w='260px'>
+          <Text fontFamily='Poppins' fontSize='md' marginRight='150px'> Beginning of Microgravity</Text>
+          <Text fontFamily='Poppins' marginTop='-25px' >80km</Text>
         </Box>
         <Box textAlign='right' padding='5px' marginTop='40px' w='250px'>
-          <Text fontSize='md' marginRight='150px'>First Stage Cutoff and Separation</Text>
-          <Text marginTop='-25px' >50km</Text>
+          <Text fontFamily='Poppins' fontSize='md' marginRight='150px'>First Stage Cutoff and Separation</Text>
+          <Text fontFamily='Poppins' marginTop='-25px' >50km</Text>
         </Box>
-        <Box  textAlign='right' padding='5px' marginTop='80px' w='250px'>
-          <Text fontSize='md' marginRight='150px'>Pitch Maneuver</Text>
-          <Text marginTop='-25px' >0.4km</Text>
+        <Box  textAlign='right' padding='5px' marginTop='60px' w='250px'>
+          <Text fontFamily='Poppins' fontSize='md' marginRight='150px'>Pitch Maneuver</Text>
+          <Text fontFamily='Poppins' marginTop='-25px' >0.4km</Text>
         </Box>
         <Box textAlign='right' padding='5px' marginTop='4px' w='250px'>
-          <Text fontSize='md' marginRight='150px'>Litftoff</Text>
-          <Text marginTop='-25px' >0.8km</Text>
+          <Text fontFamily='Poppins' fontSize='md' marginRight='150px'>Litftoff</Text>
+          <Text fontFamily='Poppins' marginTop='-25px' >0.8km</Text>
         </Box>
       </Box>
+      
+      <Center>
+      <Box h='800px' w='100px' bg='transparent' borderRight='2px solid white' marginTop='1100px'>
+
+      </Box>
+      </Center>
+
+      <Center>
+      <div style={{ 
+        width: '60%', height: '100%', position: 'absolute', marginTop: '740px'}}>
+        <Box marginLeft='400px'>
+          <Image src='/images/uoft.png' layout='fill' objectFit='contain' alt='atmosphere' />
+        </Box>
+      </div>
+      </Center>
+
+      <div style={{marginTop:'540px'}}>
+        <hr />
+          
+          <Text css={{
+              '@media screen and (min-width: 300px) and (max-width: 500px)': {
+            
+                
+                marginLeft:'35%'
+                
+                
+              },
+              '@media screen and (min-width: 700px) and (max-width: 920px)': {
+            
+                
+                marginLeft:'40%',
+                
+                
+                
+              },
+              '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+        
+                
+                marginLeft:'40%',
+               
+       
+             }
+
+
+          }}fontFamily='Poppins' marginLeft='750px' marginTop='40px' fontSize='lg'>LUNR @ 2024</Text>
+        
+      </div>
+      
+      
+      
       
       
 

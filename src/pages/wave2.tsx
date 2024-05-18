@@ -4,38 +4,35 @@ const WaveTwo = () => {
   return (
     <Box
       width="100%"
-      height="550px"
+      height="850px"
       overflow="hidden"
       bg='radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,255,1) 100%)'
       zIndex='10'
       position='absolute'
       opacity='0.1'
-      marginTop='205px'
+      marginTop='75px'
       css={{
-        '@media screen and (width: 375px)': {
-            marginTop: '-235px',
+        '@media screen and (min-width: 300px) and (max-width: 500px)': {
+            
+            marginTop:'-1000px'
+            
             
           },
-          '@media screen and (width: 414px)': {
-            marginTop: '-229px',
+          '@media screen and (min-width: 700px) and (max-width: 920px)': {
+            
+                
+            marginTop:'-650px',
+            
+            
             
           },
-          '@media screen and (width: 390px)': {
-            marginTop: '-232px',
-            
-          },
-          '@media screen and (width: 430px)': {
-            marginTop: '-229px',
-            
-          },
-          '@media screen and (width: 412px)': {
-            marginTop: '-229px',
-            
-          },
-          '@media screen and (width: 360px)': {
-            marginTop: '-229px',
-            
-          },
+          '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+        
+                
+            marginTop:'-490px'
+           
+   
+         }
       }}
     />
   );
