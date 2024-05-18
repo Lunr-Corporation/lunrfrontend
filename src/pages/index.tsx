@@ -44,7 +44,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         <Text as='b' fontFamily='Poppins' fontSize={{ base: 'xl', md: '2xl' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>About Lunr</Text>
         <Text as='b' fontFamily='Poppins' fontSize={{ base: 'xl', md: '2xl' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Mission</Text>
         <Text as='b' fontFamily='Poppins' fontSize={{ base: 'xl', md: '2xl' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Sirius</Text>
-        <Text as='b' fontFamily='Poppins' fontSize={{ base: 'xl', md: '2xl' }} color='blue' my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Contact</Text>
+        <Text as='b' fontFamily='Poppins' fontSize={{ base: 'xl', md: '2xl' }} color='#084c80' my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Contact</Text>
       </Flex>
       <Particles
   id="tsparticles"
@@ -94,7 +94,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
   }}
   style={{ position: 'absolute', zIndex: 1, width: '100%', height: '100vh' }}
 />
-      <Box bg='blue' w='100vw' h='800px' position='relative'>
+      <Box bg='#084c80' w='100vw' h='800px' position='relative'>
         <div style={{ width: '100%', height: '100%', position: 'relative' }}>
           <Image src='/images/rockethome.jpeg' layout='fill' objectFit='cover' alt='rocket' />
         </div>
@@ -222,7 +222,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
 
 
         }}>
-          <Text as='b' fontSize='40px' margin='20px' color='blue' fontFamily='Poppins' css={{
+          <Text as='b' fontSize='40px' margin='20px' color='#084c80' fontFamily='Poppins' css={{
               '@media screen and (min-width: 700px) and (max-width: 920px)': {
                 fontSize:'70px'
     
@@ -272,7 +272,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           
           <Text as='b' fontFamily='Poppins' fontSize='2xl' margin='20px' color='white'>Payload</Text>
           <Text color='white' fontFamily='Poppins'  marginLeft='20px' fontSize='lg' >Designed for Sclability</Text>
-          <Text color='blue' fontFamily='Poppins'  marginLeft='20px' as='b' fontSize='4xl'>200kg/441 lb</Text>
+          <Text color='#084c80' fontFamily='Poppins'  marginLeft='20px' as='b' fontSize='4xl'>200kg/441 lb</Text>
           <Text color='white' fontFamily='Poppins'  marginLeft='20px' fontSize='lg' >Nominal Payload Mass</Text>
           <Text color='white' fontFamily='Poppins'  marginLeft='20px' fontSize='lg'>Payload Power Supply Based on Customer Requirements</Text>
         </Box>
@@ -512,7 +512,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
 
       <Box marginTop='1800px' >
         <Center>
-          <Text color='blue' fontSize='50px' as='b' fontFamily='Poppins' css={{
+          <Text color='#084c80' fontSize='50px' as='b' fontFamily='Poppins' css={{
         '@media screen and (min-width: 300px) and (max-width: 500px)': {
             
          position:'absolute',
@@ -969,7 +969,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
 
       <Center>
       <div style={{ 
-        width: '60%', height: '100%', position: 'absolute', marginTop: '740px'}}>
+        width: '60%', height: '4%', position: 'absolute', marginTop: '740px'}}>
         <Box marginLeft='400px'>
           <Image src='/images/uoft.png' layout='fill' objectFit='contain' alt='atmosphere' />
         </Box>
