@@ -1178,7 +1178,8 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
               
             </Link>
             </Button>
-            <Link href='/'>
+            <Button background='None'>
+            <Link href='./careers'>
               
                 <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl' marginRight='20px' css={{
           
@@ -1194,6 +1195,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           }}}>Careers</Text>
               
             </Link>
+            </Button>
 
             </Flex>
             </Center>
