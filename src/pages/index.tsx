@@ -107,7 +107,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         </div>
         <Box position='absolute' bottom='0' width='100%' mb='40px' display='flex' justifyContent='center'>
           <Button backgroundColor="transparent" border="2px solid white" p='30px'>
-            <Link href='./learnMore'><Text fontFamily='Poppins' as='b' fontSize='2xl'>Learn More</Text></Link>
+            <Text>Learn More</Text>
           </Button>
         </Box>
       </Box>
@@ -1125,9 +1125,9 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
 
             <Center>
             <Flex marginBottom='40px'>
-            <Link href='/'>
-              
-                <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl' marginRight='20px' css={{
+           
+            <Button background='none'>
+            <Link href='./learnMore'><Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl' marginRight='20px' css={{
           
           '@media screen and (min-width: 300px) and (max-width: 500px)': 
           
@@ -1139,9 +1139,10 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             
             
             
-          }}}>For Investors</Text>
+          }}}>For Investors</Text></Link>
+          </Button>
               
-            </Link>
+           
             <Link href='/'>
               
                 <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl' marginRight='20px' css={{
