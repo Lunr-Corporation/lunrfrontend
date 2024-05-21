@@ -6,7 +6,8 @@ import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
 import { useCallback } from 'react';
 import DashedLine from './dashedComponent';
-import { FaChevronDown } from 'react-icons/fa';
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+
 import ProgressBar from './progressBar';
 import Wave from './wave';
 import WaveTwo from './wave2';
@@ -1027,11 +1028,11 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     
       <Center>
 
-      <div style={{marginTop:'1800px'}}>
+      <div style={{marginTop:'1400px'}}>
         
       </div>
       <div style={{ 
-        width: '60%', height: '4%', position: 'absolute', marginTop: '740px'}}>
+        width: '60%', height: '4%', position: 'absolute', marginTop: '1040px'}}>
           <Center>
             <Text fontSize='4xl' fontFamily='Poppins'>Our Partners</Text>
           </Center>
@@ -1041,35 +1042,73 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       </div>
       </Center>
 
+
+
+
+
+
       <div style={{marginTop:'40px'}}>
         <hr />
           
-          <Text css={{
-              '@media screen and (min-width: 300px) and (max-width: 500px)': {
+          <Center>
+          <Box>
+            <Center>
+            <Image src='/images/logo.png' width={200} height={400} alt='logo' />
+            </Center>
+            <Center>
+            <Text marginTop='-10px' fontSize='xl' fontFamily='Poppins' color='#084c80' marginBottom='10px'>© 2023 Lunr Corporation. All Rights Reserved.</Text>
+            </Center>
+            <Center>
+            <Text fontSize='xl' color='#084c80' fontFamily='Poppins' marginBottom='10px'>Visit <Link href='www.OnGuardOnline.gov'><Text as='u'>www.OnGuardOnline.gov</Text></Link> for social networking safety tips for parents and youth.</Text>
+            </Center>
+            <Center>
+            <Text fontSize='xl' color='#084c80' fontFamily='Poppins' marginBottom='40px'>Connect with us on Social Media</Text>
+            </Center>
             
-                
-                marginLeft:'35%'
-                
-                
-              },
-              '@media screen and (min-width: 700px) and (max-width: 920px)': {
-            
-                
-                marginLeft:'40%',
-                
-                
-                
-              },
-              '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
-        
-                
-                marginLeft:'40%',
-               
-       
-             }
+            <Center>
+            <Flex marginBottom='40px'>
+            <Link href='https://www.instagram.com/lunrcorp/'>
+              <Button color='#084c80' fontFamily='Poppins' fontSize='40px' background='none'>
+                <FaInstagram />
+              </Button>
+             </Link>    
+  
+            <Link href='https://www.linkedin.com/company/lunrcorp/'>
+              <Button color='#084c80' fontFamily='Poppins' fontSize='40px' background='none'>
+                <FaLinkedinIn />
+              </Button>
+            </Link>
+            </Flex>
+            </Center>
 
 
-          }}fontFamily='Poppins' marginLeft='750px' marginTop='40px' fontSize='lg'>LUNR @ 2024</Text>
+            <Center>
+            <Flex marginBottom='40px'>
+            <Link href='/'>
+              
+                <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl' marginRight='20px'>For Investors</Text>
+              
+            </Link>
+            <Link href='/'>
+              
+                <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl' marginRight='20px'>Privacy Policy</Text>
+              
+            </Link>
+            <Link href='/'>
+              
+                <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl' marginRight='20px'>Terms of Service</Text>
+              
+            </Link>
+            <Link href='/'>
+              
+                <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl' marginRight='20px'>Careers</Text>
+              
+            </Link>
+
+            </Flex>
+            </Center>
+          </Box>
+          </Center>
         
       </div>
       
