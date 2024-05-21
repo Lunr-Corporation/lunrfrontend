@@ -1142,8 +1142,8 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           }}}>For Investors</Text></Link>
           </Button>
               
-           
-            <Link href='/'>
+           <Button background='none'>
+            <Link href='./privacy'>
               
                 <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl' marginRight='20px' css={{
           
@@ -1159,7 +1159,9 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           }}}>Privacy Policy</Text>
               
             </Link>
-            <Link href='/'>
+            </Button>
+            <Button background='none'>
+            <Link href='./terms'>
               
                 <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl' marginRight='20px' css={{
           
@@ -1175,6 +1177,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           }}}>Terms of Service</Text>
               
             </Link>
+            </Button>
             <Link href='/'>
               
                 <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl' marginRight='20px' css={{

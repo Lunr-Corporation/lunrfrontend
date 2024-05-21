@@ -361,7 +361,8 @@ We are in communication with the President of the Canadian Space Agency, the Pre
           </Button>
               
            
-            <Link href='/'>
+          <Button background='none'>
+            <Link href='./privacy'>
               
                 <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl' marginRight='20px' css={{
           
@@ -375,11 +376,11 @@ We are in communication with the President of the Canadian Space Agency, the Pre
             
             
           }}}>Privacy Policy</Text>
-              
-            </Link>
+          </Link>
+          </Button>
             <Link href='/'>
               
-                <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl' marginRight='20px' css={{
+                <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl'css={{
           
           '@media screen and (min-width: 300px) and (max-width: 500px)': 
           
@@ -395,7 +396,7 @@ We are in communication with the President of the Canadian Space Agency, the Pre
             </Link>
             <Link href='/'>
               
-                <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl' marginRight='20px' css={{
+                <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl'  css={{
           
           '@media screen and (min-width: 300px) and (max-width: 500px)': 
           
