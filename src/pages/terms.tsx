@@ -16,6 +16,7 @@ import Link from 'next/link'
 
 import { Fade, Slide } from "react-awesome-reveal";
 import { Link as ScrollLink } from 'react-scroll';
+import Head from 'next/head'
 
 export default function LearnMore() {
 
@@ -30,7 +31,9 @@ export default function LearnMore() {
     
       return (
         <div style={{ backgroundColor: 'black' }}> 
-          
+          <Head>
+            <title>Terms and Conditions</title>
+          </Head>
           <Flex bg='none'direction={{ base: 'column', md: 'row' }} align='center' justify='center' wrap='wrap' zIndex='2'>
             <Image src='/images/logo.png' width={200} height={400} alt='logo' />
             <Button background='none' _hover={{ background: 'rgba(8, 76, 128, 0.1)'}} zIndex='10'>
@@ -109,7 +112,7 @@ export default function LearnMore() {
         <Center>
       <Text fontFamily='Poppins' color='#084c80' fontSize='xl' marginBottom='15px'>Effective Date: June 1st, 2023</Text>
       </Center>
-      <Text color='white' fontFamily='Poppins' marginBottom='15px'>These Terms of Service ("Terms") govern your use of the website located at https://www.lunrcorp.com (the "Website"), operated by Lunr, Corporation Inc a Canadian-based space startup ("we," "us," or "our"). By accessing or using our Website, you agree to be bound by these Terms. If you do not agree to these Terms, please do not access or use our Website.</Text>
+      <Text color='white' fontFamily='Poppins' marginBottom='15px'>These Terms of Service (&quot;Terms&quot;) govern your use of the website located at https://www.lunrcorp.com (the &quot;Website&quot;), operated by Lunr, Corporation Inc a Canadian-based space startup (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;). By accessing or using our Website, you agree to be bound by these Terms. If you do not agree to these Terms, please do not access or use our Website.</Text>
       <Center>
         <Text  as='b' fontFamily='Poppins' color='#084c80'>1. Website Use and Restrictions:</Text>
       </Center>
@@ -133,14 +136,14 @@ export default function LearnMore() {
 
 <Center><Text fontFamily='Poppins' color='#084c80' as='b' marginTop='15px'>4. Disclaimer of Warranties:</Text></Center>
 <Text color='white' fontFamily='Poppins' marginTop='15px'>a. We strive to provide accurate and up-to-date information on our Website; however, we do not warrant or guarantee the accuracy, reliability, or completeness of any information provided. You acknowledge and agree that your use of the Website is at your own risk.</Text>
-<Text color='white' fontFamily='Poppins' marginTop='15px'>b. The Website is provided on an "as-is" and "as available" basis, without any warranties of any kind, whether express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, non-infringement, or course of performance. </Text>
+<Text color='white' fontFamily='Poppins' marginTop='15px'>b. The Website is provided on an &quot;as-is&quot; and &quot;as available&quot; basis, without any warranties of any kind, whether express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, non-infringement, or course of performance. </Text>
 
 <Center><Text fontFamily='Poppins' color='#084c80' as='b' marginTop='15px'>5. Limitation of Liability:</Text></Center>
 <Text color='white' fontFamily='Poppins' marginTop='15px'>a. To the maximum extent permitted by applicable law, we shall not be liable for any direct, indirect, incidental, consequential, or special damages arising out of or in connection with your use of or inability to use the Website, even if we have been advised of the possibility of such damages.</Text>
 
 
 <Center><Text fontFamily='Poppins' color='#084c80' as='b' marginTop='15px'>6. Indemnification:</Text></Center>
-<Text color='white' fontFamily='Poppins' marginTop='15px'>a. You agree to indemnify, defend, and hold harmless Lunr Corporation Inc, its affiliates, directors, officers, employees, and agents from and against any claims, liabilities, damages, losses, costs, or expenses, including reasonable attorneys' fees, arising out of or in connection with your use of the Website or any violation of these Terms.</Text>
+<Text color='white' fontFamily='Poppins' marginTop='15px'>a. You agree to indemnify, defend, and hold harmless Lunr Corporation Inc, its affiliates, directors, officers, employees, and agents from and against any claims, liabilities, damages, losses, costs, or expenses, including reasonable attorneys&apos; fees, arising out of or in connection with your use of the Website or any violation of these Terms.</Text>
 
 <Center><Text fontFamily='Poppins' color='#084c80' as='b' marginTop='15px'>7. Termination:</Text></Center>
 <Text color='white' fontFamily='Poppins' marginTop='15px'>a. We reserve the right to suspend or terminate your access to the Website at any time, without notice or liability, for any reason whatsoever.</Text>

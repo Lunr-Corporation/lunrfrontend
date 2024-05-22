@@ -14,7 +14,7 @@ const WaveTwo = () => {
       css={{
         '@media screen and (min-width: 300px) and (max-width: 500px)': {
             
-            marginTop:'-1000px'
+            marginTop:'-120px'
             
             
           },

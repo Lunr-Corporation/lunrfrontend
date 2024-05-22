@@ -16,6 +16,7 @@ import Link from 'next/link'
 
 import { Fade, Slide } from "react-awesome-reveal";
 import { Link as ScrollLink } from 'react-scroll';
+import Head from 'next/head'
 
 export default function LearnMore() {
 
@@ -30,7 +31,9 @@ export default function LearnMore() {
     
       return (
         <div style={{ backgroundColor: 'black' }}> 
-          
+          <Head>
+            <title>Careers</title>
+          </Head>
           <Flex bg='none'direction={{ base: 'column', md: 'row' }} align='center' justify='center' wrap='wrap' zIndex='2'>
             <Image src='/images/logo.png' width={200} height={400} alt='logo' />
             <Button background='none' _hover={{ background: 'rgba(8, 76, 128, 0.1)'}} zIndex='10'>

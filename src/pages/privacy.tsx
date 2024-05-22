@@ -16,6 +16,7 @@ import Link from 'next/link'
 
 import { Fade, Slide } from "react-awesome-reveal";
 import { Link as ScrollLink } from 'react-scroll';
+import Head from 'next/head'
 
 export default function LearnMore() {
 
@@ -30,7 +31,9 @@ export default function LearnMore() {
     
       return (
         <div style={{ backgroundColor: 'black' }}> 
-          
+          <Head>
+            <title>Privacy Policy </title>
+            </Head>
           <Flex bg='none'direction={{ base: 'column', md: 'row' }} align='center' justify='center' wrap='wrap' zIndex='2'>
             <Image src='/images/logo.png' width={200} height={400} alt='logo' />
             <Button background='none' _hover={{ background: 'rgba(8, 76, 128, 0.1)'}} zIndex='10'>
@@ -109,7 +112,7 @@ export default function LearnMore() {
         <Center>
       <Text fontFamily='Poppins' color='#084c80' fontSize='xl' marginBottom='15px'>Effective Date: June 1st, 2023</Text>
       </Center>
-      <Text color='white' fontFamily='Poppins' marginBottom='15px'>Thank you for visiting Lunr Corporation Inc, a Canadian-based space startup ("we," "us," or "our"). This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you interact with our website, located at https://www.lunrcorp.com (the "Website"). We are committed to safeguarding your privacy and ensuring the security of your personal information. Please read this Privacy Policy carefully to understand our practices regarding your personal information.</Text>
+      <Text color='white' fontFamily='Poppins' marginBottom='15px'>Thank you for visiting Lunr Corporation Inc, a Canadian-based space startup (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;). This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you interact with our website, located at https://www.lunrcorp.com (the &quot;Website&quot;). We are committed to safeguarding your privacy and ensuring the security of your personal information. Please read this Privacy Policy carefully to understand our practices regarding your personal information.</Text>
       <Center>
         <Text as='b' fontFamily='Poppins' color='#084c80'>1. Information We Collect</Text>
       </Center>
@@ -141,7 +144,7 @@ export default function LearnMore() {
 <Text color='white' fontFamily='Poppins' marginTop='15px'>a. Our Website may contain links to third-party websites or services. This Privacy Policy does not apply to those third-party websites, and we are not responsible for their privacy practices. We encourage you to review the privacy policies of those third parties before providing any personal information.</Text>
 
 
-<Center><Text fontFamily='Poppins' color='#084c80' as='b' marginTop='15px'>6. Children's Privacy:</Text></Center>
+<Center><Text fontFamily='Poppins' color='#084c80' as='b' marginTop='15px'>6. Children&apos;s Privacy:</Text></Center>
 <Text color='white' fontFamily='Poppins' marginTop='15px'>a. Our services are not intended for individuals under the age of 13. We do not knowingly collect personal information from children under 13. If you believe we have inadvertently collected information from a child under 13, please contact us, and we will promptly delete the information.</Text>
 
 <Center><Text fontFamily='Poppins' color='#084c80' as='b' marginTop='15px'>7. Your Rights:</Text></Center>

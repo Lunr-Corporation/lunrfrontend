@@ -16,6 +16,7 @@ import Link from 'next/link'
 
 import { Fade, Slide } from "react-awesome-reveal";
 import { Link as ScrollLink } from 'react-scroll';
+import Head from 'next/head'
 
 export default function LearnMore() {
 
@@ -30,7 +31,9 @@ export default function LearnMore() {
     
       return (
         <div style={{ backgroundColor: 'black' }}> 
-          
+          <Head>
+            <title>Investors</title>
+          </Head>
           <Flex bg='none'direction={{ base: 'column', md: 'row' }} align='center' justify='center' wrap='wrap' zIndex='2'>
             <Image src='/images/logo.png' width={200} height={400} alt='logo' />
             <Button background='none' _hover={{ background: 'rgba(8, 76, 128, 0.1)'}} zIndex='10'>
@@ -137,7 +140,7 @@ export default function LearnMore() {
             
           <Box bg='rgba(0, 0, 0, 0.8)' w='70vw' h='800px' position='relative'>
             <Fade>
-            <Text fontFamily='Poppins' fontSize='2xl' marginTop='180px' color='white' >The space industry is growing at an exponential rate, with no signs of slowing down. Let's take a look at some compelling facts from EuroConsults 2022 Space Economy Report and the Polaris Market Research Report:</Text>
+            <Text fontFamily='Poppins' fontSize='2xl' marginTop='180px' color='white' >The space industry is growing at an exponential rate, with no signs of slowing down. Let&apos;s take a look at some compelling facts from EuroConsults 2022 Space Economy Report and the Polaris Market Research Report:</Text>
             </Fade>
             <Center>
             <Fade>
@@ -214,7 +217,7 @@ export default function LearnMore() {
         <Fade>
         <Text bg='none' as='b' fontSize={{ base: 'md', md: 'xl' }} color='white' fontFamily='Poppins'>Seize the opportunity to invest in a historic and groundbreaking moment for Canada.</Text>
         <Text color='white' mt={2} fontFamily='Poppins' >
-        We are Canada's first and only private space company, and we will design and build reusable rockets and spacecraft for commercial and private use. We have future visions of launching a mission to the moon and securing Canada's place as a global space leader. Through domestic launches, Canada will establish itself as a serious player in the highly competitive space race. 
+        We are Canada&apos;s first and only private space company, and we will design and build reusable rockets and spacecraft for commercial and private use. We have future visions of launching a mission to the moon and securing Canada&apos;s place as a global space leader. Through domestic launches, Canada will establish itself as a serious player in the highly competitive space race. 
         </Text>
         <Button backgroundColor="transparent" border="2px solid white" p='30px' marginTop='30px'>
           <Link href='/'>
