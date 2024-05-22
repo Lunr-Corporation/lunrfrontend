@@ -118,7 +118,9 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         </div>
         <Box position='absolute' bottom='0' width='100%' mb='40px' display='flex' justifyContent='center'>
           <Button backgroundColor="transparent" border="2px solid white" p='30px'>
-            <Text>Learn More</Text>
+          <ScrollLink to='aboutLunr' smooth={true} duration={500}>
+          <Text as='b' fontSize='2xl' fontFamily='Poppins' color='white'>Learn More</Text>
+          </ScrollLink>
           </Button>
         </Box>
       </Box>
@@ -142,11 +144,13 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       >
         <Fade>
         <Text bg='none' as='b' fontSize={{ base: 'md', md: 'xl' }} fontFamily='Poppins'>What it Means to Touch The Sky</Text>
-        <Text mt={2} fontFamily='Poppins'>
+        <Text mt={2} fontFamily='Poppins' color='white'>
           Lunr aims to touch the stars by launching to LEO at 600 km in altitude even in the frigid temperatures of Canada. Lunr wants redefine what space-travel is and that it is possible to do so anywhere rather than a select few countries.
         </Text>
         <Button backgroundColor="transparent" border="2px solid white" p='30px' marginTop='30px'>
-          <Text as='b' fontSize='2xl' fontFamily='Poppins'>Learn More</Text>
+        <ScrollLink to='mission' smooth={true} duration={500}>
+          <Text as='b' fontSize='2xl' fontFamily='Poppins' color='white'>Learn More</Text>
+          </ScrollLink>
         </Button>
         </Fade>
       </Box>
@@ -173,13 +177,15 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         
       >
           <Fade>
-          <Text bg='none' as='b' fontSize={{ base: 'md', md: 'xl' }} fontFamily='Poppins'>Meet Sirius</Text>
-          <Text mt={2} fontFamily='Poppins'>
+          <Text bg='none' as='b' fontSize={{ base: 'md', md: 'xl' }} fontFamily='Poppins' color='white'>Meet Sirius</Text>
+          <Text mt={2} fontFamily='Poppins' color='white'>
             Named after the brightest star in Earth's night sky, Sirius will be a two-stage launch vehicle powered by a 9-cluster of high-performance liquid rocket engines, designed for efficient payload delivery to Low Earth Orbit (LEO) and beyond, marking a milestone as one of Canada's first orbital-class launch vehicles.
           </Text>
           
           <Button backgroundColor="transparent" border="2px solid white" p='30px' marginTop='30px'>
-            <Text as='b' fontSize='2xl' fontFamily='Poppins'>Learn More</Text>
+            <ScrollLink to='rocket' smooth={true} duration={500}>
+              <Text as='b' fontSize='2xl' fontFamily='Poppins' color='white'>Learn More</Text>
+            </ScrollLink>
           </Button>
           </Fade>
         </Box>
@@ -346,6 +352,12 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> Second Stage TVC and RCS Integration</Text>
     </Slide>
   </Box>
+
+
+
+
+
+  
 
         <Box width='270px' zIndex='6' position='absolute' marginLeft={{ md: '450px', sm: '0px', lg:'1120px' }} marginTop={{ base: '0px', md: '-310px' }} css={{
           '@media screen and (min-width: 300px) and (max-width: 500px)': {
@@ -660,7 +672,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         }
          
       }}>
-        <Text fontFamily='Poppins' as='b' fontSize='2xl' css={{
+        <Text fontFamily='Poppins' as='b' color='white' fontSize='2xl' css={{
           
           '@media screen and (min-width: 300px) and (max-width: 500px)': 
           
@@ -726,7 +738,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       }
 
       }}>
-        <Text fontFamily='Poppins' as='b' fontSize='2xl' css={{
+        <Text color='white' fontFamily='Poppins' as='b' fontSize='2xl' css={{
           
           '@media screen and (min-width: 300px) and (max-width: 500px)': 
           
@@ -788,7 +800,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       }
 
       }}>
-        <Text fontFamily='Poppins' as='b' fontSize='2xl' css={{
+        <Text color='white' fontFamily='Poppins' as='b' fontSize='2xl' css={{
           
           '@media screen and (min-width: 300px) and (max-width: 500px)': 
           
@@ -857,7 +869,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       }
 
       }}>
-        <Text fontFamily='Poppins' as='b' fontSize='2xl' css={{
+        <Text color='white' fontFamily='Poppins' as='b' fontSize='2xl' css={{
           
           '@media screen and (min-width: 300px) and (max-width: 500px)': 
           
@@ -915,7 +927,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         width:'100px'
       }
       }}>
-        <Text fontFamily='Poppins' as='b' fontSize='2xl' css={{
+        <Text color='white' fontFamily='Poppins' as='b' fontSize='2xl' css={{
           
           '@media screen and (min-width: 300px) and (max-width: 500px)': 
           
@@ -987,50 +999,50 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       }}>
         <Fade>
         <Box  textAlign='right' padding='5px'  w='250px'>
-          <Text fontFamily='Poppins' fontSize='md' marginRight='160px'>LEO</Text>
-          <Text fontFamily='Poppins' marginTop='-25px' >600km</Text>
+          <Text color='white' fontFamily='Poppins' fontSize='md' marginRight='160px'>LEO</Text>
+          <Text color='white' fontFamily='Poppins' marginTop='-25px' >600km</Text>
         </Box>
         </Fade>
         
         <Fade>
         <Box textAlign='right' padding='5px' marginTop='50px' w='250px'>
-          <Text fontFamily='Poppins' fontSize='md' marginRight='150px'>Orbit Insertion</Text>
-          <Text fontFamily='Poppins' marginTop='-25px' >200 - 600km</Text>
+          <Text color='white' fontFamily='Poppins' fontSize='md' marginRight='150px'>Orbit Insertion</Text>
+          <Text color='white' fontFamily='Poppins' marginTop='-25px' >200 - 600km</Text>
         </Box>
         </Fade>
 
         <Fade>
         <Box textAlign='right' padding='5px' marginTop='20px' w='250px'>
-          <Text fontFamily='Poppins' fontSize='md' marginRight='150px'>Second Stage Cutoff</Text>
-          <Text fontFamily='Poppins' marginTop='-25px' >150 - 500km</Text>
+          <Text color='white' fontFamily='Poppins' fontSize='md' marginRight='150px'>Second Stage Cutoff</Text>
+          <Text color='white' fontFamily='Poppins' marginTop='-25px' >150 - 500km</Text>
         </Box>
         </Fade>
         
         <Fade>
         <Box textAlign='right' padding='5px' marginTop='70px' w='260px'>
-          <Text fontFamily='Poppins' fontSize='md' marginRight='150px'> Beginning of Microgravity</Text>
-          <Text fontFamily='Poppins' marginTop='-25px' >80km</Text>
+          <Text color='white' fontFamily='Poppins' fontSize='md' marginRight='150px'> Beginning of Microgravity</Text>
+          <Text color='white' fontFamily='Poppins' marginTop='-25px' >80km</Text>
         </Box>
         </Fade>
 
         <Fade>
         <Box textAlign='right' padding='5px' marginTop='40px' w='250px'>
-          <Text fontFamily='Poppins' fontSize='md' marginRight='150px'>First Stage Cutoff and Separation</Text>
-          <Text fontFamily='Poppins' marginTop='-25px' >50km</Text>
+          <Text color='white' fontFamily='Poppins' fontSize='md' marginRight='150px'>First Stage Cutoff and Separation</Text>
+          <Text color='white' fontFamily='Poppins' marginTop='-25px' >50km</Text>
         </Box>
         </Fade>
 
         <Fade>
         <Box  textAlign='right' padding='5px' marginTop='60px' w='250px'>
-          <Text fontFamily='Poppins' fontSize='md' marginRight='150px'>Pitch Maneuver</Text>
-          <Text fontFamily='Poppins' marginTop='-25px' >0.4km</Text>
+          <Text color='white' fontFamily='Poppins' fontSize='md' marginRight='150px'>Pitch Maneuver</Text>
+          <Text color='white' fontFamily='Poppins' marginTop='-25px' >0.4km</Text>
         </Box>
         </Fade>
 
         <Fade>
         <Box textAlign='right' padding='5px' marginTop='4px' w='250px'>
-          <Text fontFamily='Poppins' fontSize='md' marginRight='150px'>Litftoff</Text>
-          <Text fontFamily='Poppins' marginTop='-25px' >0.8km</Text>
+          <Text color='white' fontFamily='Poppins' fontSize='md' marginRight='150px'>Litftoff</Text>
+          <Text color='white' fontFamily='Poppins' marginTop='-25px' >0.8km</Text>
         </Box>
         </Fade>
       </Box>
@@ -1045,7 +1057,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       <div style={{ 
         width: '60%', height: '4%', position: 'absolute', marginTop: '1040px'}}>
           <Center>
-            <Text fontSize='4xl' fontFamily='Poppins'>Our Partners</Text>
+            <Text color='white' fontSize='4xl' fontFamily='Poppins'>Our Partners</Text>
           </Center>
         <Box marginLeft='400px'>
           <Image src='/images/uoft.png' layout='fill' objectFit='contain' alt='atmosphere' />

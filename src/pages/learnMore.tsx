@@ -15,7 +15,7 @@ import WaveTwo from './wave2';
 import Link from 'next/link'
 
 import { Fade, Slide } from "react-awesome-reveal";
-
+import { Link as ScrollLink } from 'react-scroll';
 
 export default function LearnMore() {
 
@@ -31,13 +31,30 @@ export default function LearnMore() {
       return (
         <div style={{ backgroundColor: 'black' }}> 
           
-          <Flex direction={{ base: 'column', md: 'row' }} align='center' justify='center' wrap='wrap' zIndex='2'>
+          <Flex bg='none'direction={{ base: 'column', md: 'row' }} align='center' justify='center' wrap='wrap' zIndex='2'>
             <Image src='/images/logo.png' width={200} height={400} alt='logo' />
-            <Text as='b' fontFamily='Poppins' fontSize={{ base: 'xl', md: '2xl' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>About Lunr</Text>
-            <Text as='b' fontFamily='Poppins' fontSize={{ base: 'xl', md: '2xl' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Mission</Text>
-            <Text as='b' fontFamily='Poppins' fontSize={{ base: 'xl', md: '2xl' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Sirius</Text>
-            <Text as='b' fontFamily='Poppins' fontSize={{ base: 'xl', md: '2xl' }} color='#084c80' my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Contact</Text>
-          </Flex>
+            <Button background='none' _hover={{ background: 'rgba(8, 76, 128, 0.1)'}} zIndex='10'>
+            <Link href='/'>
+                <Text as='b' fontFamily='Poppins' fontSize={{ base: 'lg', md: 'lg' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }} color='white'>About Lunr</Text>
+                </Link>
+            </Button>
+            <Button background='none' _hover={{ background: 'rgba(8, 76, 128, 0.1)'}} zIndex='10'>
+            <Link href='./learnMore'>
+                <Text as='b' fontFamily='Poppins' fontSize={{ base: 'lg', md: 'lg' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }} color='white'>For Investors</Text>
+                </Link>
+            </Button>
+            <Button background='none' _hover={{ background: 'rgba(8, 76, 128, 0.1)'}} zIndex='10'>
+            <Link href='/'>
+                <Text as='b' fontFamily='Poppins' fontSize={{ base: 'lg', md: 'lg' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }} color='white'>Mission</Text>
+                </Link>
+            </Button>
+            <Button background='none' _hover={{ background: 'rgba(8, 76, 128, 0.1)'}} zIndex='10'>
+            <Link href='/'>
+                <Text as='b' fontFamily='Poppins' fontSize={{ base: 'lg', md: 'lg' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }} color='white'>Siruis</Text>
+                </Link>
+            </Button>
+            <Button background='None' _hover={{ background: 'rgba(8, 76, 128, 0.1)'}} zIndex='10'><ScrollLink to='contact' smooth={true} duration={500}><Text as='b' fontFamily='Poppins' fontSize={{ base: 'lg', md: 'lg' }} color='#084c80' my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Contact</Text></ScrollLink></Button>
+        </Flex>
           
           <Particles
       id="tsparticles"
@@ -120,7 +137,7 @@ export default function LearnMore() {
             
           <Box bg='rgba(0, 0, 0, 0.8)' w='70vw' h='800px' position='relative'>
             <Fade>
-            <Text fontFamily='Poppins' fontSize='2xl' marginTop='180px'>The space industry is growing at an exponential rate, with no signs of slowing down. Let's take a look at some compelling facts from EuroConsults 2022 Space Economy Report and the Polaris Market Research Report:</Text>
+            <Text fontFamily='Poppins' fontSize='2xl' marginTop='180px' color='white' >The space industry is growing at an exponential rate, with no signs of slowing down. Let's take a look at some compelling facts from EuroConsults 2022 Space Economy Report and the Polaris Market Research Report:</Text>
             </Fade>
             <Center>
             <Fade>
@@ -135,22 +152,22 @@ export default function LearnMore() {
           }}}>
                     <Flex>
                         <Box marginRight='40px'>
-                            <Text fontSize='xl'>Fact</Text>
-                            <Text fontSize='xl'>CAGR</Text>
-                            <Text fontSize='xl'>Global Valuation</Text>
-                            <Text fontSize='xl'>Valuation Forecast</Text>
+                            <Text fontSize='xl' color='white' as='u'>Fact</Text>
+                            <Text fontSize='xl' color='white' >CAGR</Text>
+                            <Text fontSize='xl' color='white' >Global Valuation</Text>
+                            <Text fontSize='xl' color='white' >Valuation Forecast</Text>
                         </Box>
                         <Box marginRight='40px'>
-                            <Text fontSize='xl' >Data</Text>
+                            <Text fontSize='xl' color='white' as='u'>Data</Text>
                             <Text fontSize='xl' color='#084c80'>15.5%</Text>
                             <Text fontSize='xl' color='#084c80'>$464 Billion</Text>
                             <Text fontSize='xl' color='#084c80'>$1 Trillion</Text>
                         </Box>
                         <Box marginRight='40px'>
-                            <Text fontSize='xl'>Year(s)</Text>
-                            <Text fontSize='xl'>From 2022 - 2030</Text>
-                            <Text fontSize='xl'>2022</Text>
-                            <Text fontSize='xl'>By 2040</Text>
+                            <Text fontSize='xl' color='white' as='u'>Year(s)</Text>
+                            <Text fontSize='xl' color='white' >From 2022 - 2030</Text>
+                            <Text fontSize='xl' color='white' >2022</Text>
+                            <Text fontSize='xl' color='white' >By 2040</Text>
                         </Box>
                     </Flex>
                 
@@ -196,11 +213,13 @@ export default function LearnMore() {
       >
         <Fade>
         <Text bg='none' as='b' fontSize={{ base: 'md', md: 'xl' }} color='white' fontFamily='Poppins'>Seize the opportunity to invest in a historic and groundbreaking moment for Canada.</Text>
-        <Text color='white' mt={2} fontFamily='Poppins'>
+        <Text color='white' mt={2} fontFamily='Poppins' >
         We are Canada's first and only private space company, and we will design and build reusable rockets and spacecraft for commercial and private use. We have future visions of launching a mission to the moon and securing Canada's place as a global space leader. Through domestic launches, Canada will establish itself as a serious player in the highly competitive space race. 
         </Text>
         <Button backgroundColor="transparent" border="2px solid white" p='30px' marginTop='30px'>
-          <Text as='b' fontSize='2xl' fontFamily='Poppins'>Learn More</Text>
+          <Link href='/'>
+            <Text as='b' fontSize='2xl' fontFamily='Poppins' color='white'>Learn More</Text>
+          </Link>
         </Button>
         </Fade>
       </Box>
@@ -239,7 +258,9 @@ export default function LearnMore() {
 We are in communication with the President of the Canadian Space Agency, the Premier of Nova Scotia, and the Nova Scotia Provincial Government regarding Lunr.
         </Text>
         <Button backgroundColor="transparent" border="2px solid white" p='30px' marginTop='30px'>
-          <Text as='b' fontSize='2xl' fontFamily='Poppins'>Learn More</Text>
+          <Link href='/'>
+            <Text as='b' fontSize='2xl' fontFamily='Poppins' color='white' >Learn More</Text>
+          </Link>
         </Button>
         </Fade>
       </Box>
@@ -248,7 +269,7 @@ We are in communication with the President of the Canadian Space Agency, the Pre
 
       <Center>
       <Box marginTop='140px'>
-        <Text fontFamily='Poppins' fontSize='2xl' css={{
+        <Text fontFamily='Poppins' color='white'  fontSize='2xl' css={{
           
           '@media screen and (min-width: 300px) and (max-width: 500px)': 
           
@@ -259,13 +280,13 @@ We are in communication with the President of the Canadian Space Agency, the Pre
           }
            
    
-         }}>Feel Free to send us email at: <Button background='none' fontFamily='Poppins' fontSize='2xl'><Link href='mailto:jeanue@lunrcorp.com'><Text>jeanue@lunrcorp.com</Text></Link></Button></Text>
+         }}>Feel Free to send us email at: <Button background='none' fontFamily='Poppins' fontSize='2xl' _hover={{ background: 'rgba(8, 76, 128, 0.1)'}}><Link href='mailto:jeanue@lunrcorp.com'><Text color='white' fontFamily='Poppins'>jeanue@lunrcorp.com</Text></Link></Button></Text>
 
 
       </Box>
       </Center>
 
-      <div style={{marginTop:'120px'}}>
+      <div style={{marginTop:'120px'}} id='contact'>
         <hr />
           
           <Center>
@@ -274,54 +295,12 @@ We are in communication with the President of the Canadian Space Agency, the Pre
             <Image src='/images/logo.png' width={200} height={400} alt='logo' />
             </Center>
             <Center>
-            <Text marginTop='-10px' fontSize='xl' fontFamily='Poppins' color='#084c80' marginBottom='10px' css={{
-          
-          '@media screen and (min-width: 300px) and (max-width: 500px)': 
-          
-          {
-            
-            fontSize:'16px',
-            
-          }}}>© 2023 Lunr Corporation. All Rights Reserved.</Text>
-            </Center>
-            <Center>
-            <div style={{textAlign: 'center'}}>
-            <Text fontSize='xl' color='#084c80' fontFamily='Poppins' marginBottom='10px' css={{
-          
-          '@media screen and (min-width: 300px) and (max-width: 500px)': 
-          
-          {
-            
-            fontSize:'16px',
-            marginLeft:'14px'
-            
-          }}}>Visit <Link href='www.OnGuardOnline.gov'><Text as='u' css={{
-          
-            '@media screen and (min-width: 300px) and (max-width: 500px)': 
-            
-            {
-              
-              fontSize:'16px',
-              
-              
-              
-              
-            }}}>www.OnGuardOnline.gov</Text></Link> for social networking safety tips for parents and youth.</Text>
-            </div>
+            <Text marginTop='-10px' fontSize='sm' fontFamily='Poppins' color='#084c80' marginBottom='10px'>© 2023 Lunr Corporation. All Rights Reserved.</Text>
             </Center>
             
+            
             <Center>
-            <Text fontSize='xl' color='#084c80' fontFamily='Poppins' marginBottom='40px' css={{
-          
-          '@media screen and (min-width: 300px) and (max-width: 500px)': 
-          
-          {
-            
-            fontSize:'16px',
-            
-            
-            
-          }}}>Connect with us on Social Media</Text>
+            <Text fontSize='sm' color='#084c80' fontFamily='Poppins' marginBottom='40px'>Connect with us on Social Media</Text>
             </Center>
             
             <Center>
@@ -342,74 +321,29 @@ We are in communication with the President of the Canadian Space Agency, the Pre
 
 
             <Center>
-            <Flex marginBottom='40px'>
-           
-            <Button background='none'>
-            <Link href='./learnMore'><Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl' marginRight='20px' css={{
-          
-          '@media screen and (min-width: 300px) and (max-width: 500px)': 
-          
-          {
-            
-            fontSize:'16px',
-            marginLeft:'14px'
-            
-            
-            
-            
-          }}}>For Investors</Text></Link>
-          </Button>
+            <Flex marginBottom='40px' w='300px'>
               
-           
-          <Button background='none'>
+           <Button background='none' _hover={{ background: 'rgba(8, 76, 128, 0.1)' }}>
             <Link href='./privacy'>
               
-                <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl' marginRight='20px' css={{
-          
-          '@media screen and (min-width: 300px) and (max-width: 500px)': 
-          
-          {
-            
-            fontSize:'16px',
-            
-            
-            
-            
-          }}}>Privacy Policy</Text>
-          </Link>
-          </Button>
-            <Link href='/'>
-              
-                <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl'css={{
-          
-          '@media screen and (min-width: 300px) and (max-width: 500px)': 
-          
-          {
-            
-            fontSize:'16px',
-            
-            
-            
-            
-          }}}>Terms of Service</Text>
+                <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='sm' marginRight='20px'>Privacy Policy</Text>
               
             </Link>
-            <Link href='/'>
+            </Button>
+            <Button background='none' marginRight='10px' marginLeft='15px' _hover={{ background: 'rgba(8, 76, 128, 0.1)' }}>
+            <Link href='./terms'>
               
-                <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl'  css={{
-          
-          '@media screen and (min-width: 300px) and (max-width: 500px)': 
-          
-          {
-            
-            fontSize:'16px',
-            
-            
-            
-            
-          }}}>Careers</Text>
+                <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='sm' marginRight='20px'>Terms of Service</Text>
               
             </Link>
+            </Button>
+            <Button background='None' _hover={{ background: 'rgba(8, 76, 128, 0.1)' }}>
+            <Link href='./careers'>
+              
+                <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='sm' marginRight='20px'>Careers</Text>
+              
+            </Link>
+            </Button>
 
             </Flex>
             </Center>
