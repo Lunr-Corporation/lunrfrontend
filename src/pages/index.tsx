@@ -1056,54 +1056,12 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             <Image src='/images/logo.png' width={200} height={400} alt='logo' />
             </Center>
             <Center>
-            <Text marginTop='-10px' fontSize='xl' fontFamily='Poppins' color='#084c80' marginBottom='10px' css={{
-          
-          '@media screen and (min-width: 300px) and (max-width: 500px)': 
-          
-          {
-            
-            fontSize:'16px',
-            
-          }}}>© 2023 Lunr Corporation. All Rights Reserved.</Text>
-            </Center>
-            <Center>
-            <div style={{textAlign: 'center'}}>
-            <Text fontSize='xl' color='#084c80' fontFamily='Poppins' marginBottom='10px' css={{
-          
-          '@media screen and (min-width: 300px) and (max-width: 500px)': 
-          
-          {
-            
-            fontSize:'16px',
-            marginLeft:'14px'
-            
-          }}}>Visit <Link href='www.OnGuardOnline.gov'><Text as='u' css={{
-          
-            '@media screen and (min-width: 300px) and (max-width: 500px)': 
-            
-            {
-              
-              fontSize:'16px',
-              
-              
-              
-              
-            }}}>www.OnGuardOnline.gov</Text></Link> for social networking safety tips for parents and youth.</Text>
-            </div>
+            <Text marginTop='-10px' fontSize='sm' fontFamily='Poppins' color='#084c80' marginBottom='10px'>© 2023 Lunr Corporation. All Rights Reserved.</Text>
             </Center>
             
+            
             <Center>
-            <Text fontSize='xl' color='#084c80' fontFamily='Poppins' marginBottom='40px' css={{
-          
-          '@media screen and (min-width: 300px) and (max-width: 500px)': 
-          
-          {
-            
-            fontSize:'16px',
-            
-            
-            
-          }}}>Connect with us on Social Media</Text>
+            <Text fontSize='sm' color='#084c80' fontFamily='Poppins' marginBottom='40px'>Connect with us on Social Media</Text>
             </Center>
             
             <Center>
@@ -1124,75 +1082,26 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
 
 
             <Center>
-            <Flex marginBottom='40px'>
-           
-            <Button background='none'>
-            <Link href='./learnMore'><Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl' marginRight='20px' css={{
-          
-          '@media screen and (min-width: 300px) and (max-width: 500px)': 
-          
-          {
-            
-            fontSize:'16px',
-            marginLeft:'10px'
-            
-            
-            
-            
-          }}}>For Investors</Text></Link>
-          </Button>
+            <Flex marginBottom='40px' w='300px'>
               
-           <Button background='none'>
+           <Button background='none' _hover={{ background: 'rgba(8, 76, 128, 0.1)' }}>
             <Link href='./privacy'>
               
-                <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl' marginRight='20px' css={{
-          
-          '@media screen and (min-width: 300px) and (max-width: 500px)': 
-          
-          {
-            
-            fontSize:'16px',
-            
-            
-            
-            
-          }}}>Privacy Policy</Text>
+                <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='sm' marginRight='20px'>Privacy Policy</Text>
               
             </Link>
             </Button>
-            <Button background='none'>
+            <Button background='none' marginRight='10px' marginLeft='15px' _hover={{ background: 'rgba(8, 76, 128, 0.1)' }}>
             <Link href='./terms'>
               
-                <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl' marginRight='20px' css={{
-          
-          '@media screen and (min-width: 300px) and (max-width: 500px)': 
-          
-          {
-            
-            fontSize:'16px',
-            
-            
-            
-            
-          }}}>Terms of Service</Text>
+                <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='sm' marginRight='20px'>Terms of Service</Text>
               
             </Link>
             </Button>
-            <Button background='None'>
+            <Button background='None' _hover={{ background: 'rgba(8, 76, 128, 0.1)' }}>
             <Link href='./careers'>
               
-                <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='xl' marginRight='20px' css={{
-          
-          '@media screen and (min-width: 300px) and (max-width: 500px)': 
-          
-          {
-            
-            fontSize:'16px',
-            
-            
-            
-            
-          }}}>Careers</Text>
+                <Text color='#084c80' as='u' fontFamily='Poppins' fontSize='sm' marginRight='20px'>Careers</Text>
               
             </Link>
             </Button>
