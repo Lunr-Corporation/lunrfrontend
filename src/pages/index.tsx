@@ -15,6 +15,7 @@ import LearnMore from './learnMore';
 import Link from 'next/link'
 
 import { Fade, Slide } from "react-awesome-reveal";
+import { Link as ScrollLink } from 'react-scroll';
 
 
 
@@ -44,12 +45,22 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
   return (
     <div style={{ backgroundColor: 'black' }}> 
       
-      <Flex direction={{ base: 'column', md: 'row' }} align='center' justify='center' wrap='wrap' zIndex='2'>
+      <Flex bg='none'direction={{ base: 'column', md: 'row' }} align='center' justify='center' wrap='wrap' zIndex='2'>
         <Image src='/images/logo.png' width={200} height={400} alt='logo' />
-        <Text as='b' fontFamily='Poppins' fontSize={{ base: 'xl', md: '2xl' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>About Lunr</Text>
-        <Text as='b' fontFamily='Poppins' fontSize={{ base: 'xl', md: '2xl' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Mission</Text>
-        <Text as='b' fontFamily='Poppins' fontSize={{ base: 'xl', md: '2xl' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Sirius</Text>
-        <Text as='b' fontFamily='Poppins' fontSize={{ base: 'xl', md: '2xl' }} color='#084c80' my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Contact</Text>
+        <Button background='None' _hover={{ background: 'rgba(8, 76, 128, 0.1)'}} zIndex='10'>
+          <ScrollLink to='aboutLunr' smooth={true} duration={500}>
+          <Text as='b' fontFamily='Poppins' fontSize={{ base: 'lg', md: 'lg' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }} color='white'>About Lunr</Text>
+          </ScrollLink>
+        </Button>
+        <Button background='none' _hover={{ background: 'rgba(8, 76, 128, 0.1)'}} zIndex='10'>
+          <Link href='./learnMore'>
+            <Text as='b' fontFamily='Poppins' fontSize={{ base: 'lg', md: 'lg' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }} color='white'>For Investors</Text>
+            </Link>
+          </Button>
+        
+        <Button background='None' _hover={{ background: 'rgba(8, 76, 128, 0.1)'}} zIndex='10'><ScrollLink to='mission' smooth={true} duration={500}><Text as='b' fontFamily='Poppins' fontSize={{ base: 'lg', md: 'lg' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }} color='white'>Mission</Text></ScrollLink></Button>
+        <Button background='None' _hover={{ background: 'rgba(8, 76, 128, 0.1)'}} zIndex='10'><ScrollLink to='rocket' smooth={true} duration={500}><Text as='b' fontFamily='Poppins' fontSize={{ base: 'lg', md: 'lg' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }} color='white'>Sirius</Text></ScrollLink></Button>
+        <Button background='None' _hover={{ background: 'rgba(8, 76, 128, 0.1)'}} zIndex='10'><ScrollLink to='contact' smooth={true} duration={500}><Text as='b' fontFamily='Poppins' fontSize={{ base: 'lg', md: 'lg' }} color='#084c80' my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }}>Contact</Text></ScrollLink></Button>
       </Flex>
       
       <Particles
@@ -113,7 +124,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       </Box>
 
       <Box bg='none' w='100vw' h='800px' position='relative'>
-      <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+      <div style={{ width: '100%', height: '100%', position: 'relative' }} id='aboutLunr'>
         {/* Replace the Image component with your actual image */}
         <img src='/images/atmosphere.jpeg' style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt='atmosphere' />
       </div>
@@ -181,7 +192,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         marginLeft:'0px'
       }}>
         
-      <div style={{  display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', position: 'relative', zIndex:'1'}} >
+      <div id='rocket' style={{  display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', position: 'relative', zIndex:'1'}} >
         <Box css={{
               '@media screen and (min-width: 300px) and (max-width: 500px)': {
                 position: 'relative',
@@ -581,7 +592,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       
       <Fade>
       <Box bg='none' w='90vw' h='800px' position='relative' opacity='0.8'>
-  <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+  <div style={{ width: '100%', height: '100%', position: 'relative' }} id='mission'>
     <Box css={{
       '@media screen and (min-width: 300px) and (max-width: 500px)': {
             
@@ -1047,7 +1058,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
 
 
 
-      <div style={{marginTop:'40px'}}>
+      <div style={{marginTop:'40px'}} id='contact'>
         <hr />
           
           <Center>
