@@ -347,9 +347,9 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     }}>
     <Slide direction='left'>
     <Text fontFamily='Poppins'  as='b' fontSize='2xl' margin='20px' color='white'>Avionics</Text>
-    <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - Telemetry System</Text>
-    <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - Power Storage</Text>
-    <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - Multiple Computers</Text>
+    <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> Telemetry System</Text>
+    <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> Power Storage</Text>
+    <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> Multiple Computers</Text>
     <Text fontFamily='Poppins'  color='#084c80' marginLeft='40px' fontSize='lg'> Payload</Text>
     <Text fontFamily='Poppins'  color='#084c80' marginLeft='40px' fontSize='lg'> First Stage</Text>
     <Text fontFamily='Poppins'  color='#084c80' marginLeft='40px' fontSize='lg'> Second Stage</Text>
@@ -395,8 +395,8 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       
           <Slide direction='right'>
           <Text fontFamily='Poppins'  as='b' fontSize='2xl' margin='20px' color='white'>Structure</Text>
-          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - Height: 20m</Text>
-          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - Diameter: 2.3m</Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'>Height: 20m</Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'>Diameter: 2.3m</Text>
           
           </Slide>
         </Box>
@@ -442,9 +442,9 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       
           <Slide direction='right'>
           <Text fontFamily='Poppins'  as='b' fontSize='2xl' margin='20px' color='white'>Liquid Engine</Text>
-          <Text fontFamily='Poppins'  color='#084c80' marginLeft='20px' fontSize='lg'> - RP-1 – Liquid Fuel (Fuel)</Text>
-          <Text fontFamily='Poppins'  color='#084c80' marginLeft='20px' fontSize='lg'> - LOX – Liquid oxygen (Oxidizer)</Text>
-          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - Made from Inconel 718, Chromium Zirconium, Aluminum Alloy</Text>
+          <Text fontFamily='Poppins'  color='#084c80' marginLeft='20px' fontSize='lg' marginTop='3px'> RP-1 – Liquid Fuel (Fuel)</Text>
+          <Text fontFamily='Poppins'  color='#084c80' marginLeft='20px' fontSize='lg'> LOX – Liquid oxygen (Oxidizer)</Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> Made from Inconel 718, Chromium Zirconium, Aluminum Alloy</Text>
           </Slide>
         </Box>
 
@@ -478,7 +478,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           <Slide direction='left'>
           <Text fontFamily='Poppins'  as='b' fontSize='2xl' margin='20px' color='white'>Recovery Bay</Text>
 
-          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - Parachute for Solid Propellants</Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> Parachute for Solid Propellants</Text>
           </Slide>
           
         </Box>
@@ -521,9 +521,9 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     }}>
           <Slide direction='right'>
           <Text fontFamily='Poppins'  as='b' fontSize='2xl' margin='20px' color='white'>Aerodynamics</Text>
-          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - 4 base fins to control stability </Text>
-          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - Real time corrections</Text>
-          <Text fontFamily='Poppins'  color='white' marginLeft='20px' > - Embedded into solid Motor</Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> 4 base fins to control stability </Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> Real time corrections</Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px' > Embedded into solid Motor</Text>
           </Slide>
         </Box>
 
@@ -565,11 +565,11 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
 
           <Slide direction='right'>
           <Text fontFamily='Poppins'  as='b' fontSize='2xl' margin='20px' color='white'>Solid Engine</Text>
-          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - HTPB, aluminum powder</Text>
-          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - Ozone protector additives</Text>
-          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - Rod and Tube grain design </Text>
-          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - Single exit nozzle </Text>
-          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> - Nozzle made from Graphite </Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> HTPB, aluminum powder</Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> Ozone protector additives</Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> Rod and Tube grain design </Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> Single exit nozzle </Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> Nozzle made from Graphite </Text>
           </Slide>
         </Box>
 
