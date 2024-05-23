@@ -120,12 +120,34 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         <div style={{ width: '100%', height: '100%', position: 'relative' }}>
           <Image src='/images/home.png' layout='fill' objectFit='cover' alt='rocket' />
         </div>
-        <Box position='absolute' bottom='0' width='100%' mb='40px' display='flex' justifyContent='center'>
-          <Button backgroundColor="transparent" border="2px solid white" p='30px'>
+        <Box
+        
+          marginTop='40px'
+          position='absolute'
+          top={{ base: '10px', md: '20px' }}
+          left={{ base: '10px', md: '20px' }} // Adjusted to left instead of right
+          p={4}
+          bg='transparent'
+          color='white'
+          maxW={{ base: '90%', md: '40%' }} // Ensures the box doesn't exceed the image width
+          zIndex='21'
+          
+          
+        
+      >
+          <Fade>
+          <Text bg='none' as='b' fontSize='80px'fontFamily='Poppins' color='white'>Empowering Humanity's Next Great Leap</Text>
+          </Fade>
+          
+          <Button backgroundColor="transparent" border="2px solid white" p='30px' marginTop='60px'>
           <ScrollLink to='aboutLunr' smooth={true} duration={500}>
-          <Text as='b' fontSize='2xl' fontFamily='Poppins' color='white'>Learn More</Text>
+          <Text as='b' fontSize='2xl' fontFamily='Poppins' color='white'>Get Started</Text>
           </ScrollLink>
           </Button>
+          
+        </Box>
+        <Box position='absolute' bottom='0' width='100%' mb='40px' display='flex' justifyContent='center'>
+          
         </Box>
       </Box>
 
@@ -682,424 +704,13 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       }
       
     }}>
-      <Image src='/images/MissionDiagram.png' layout='fill' objectFit='contain' alt='atmosphere' />
+      <Image src='/images/MissionUpdated.png' layout='fill' objectFit='contain' alt='atmosphere' />
     </Box>
   </div>
 </Box>
 </Fade>
       </Center>
-      <Fade>
-      <Box w='300px' position='absolute' marginTop='-650px' marginLeft='500px' css={{
-        '@media screen and (min-width: 300px) and (max-width: 500px)': {
-            
-          marginLeft:'9px',
-          lineHeight: '2px',
-          marginTop:'-420px',
-          width:'60px'
-          
-          
-        },
-        '@media screen and (min-width: 700px) and (max-width: 920px)': 
-          
-          {
-            
-            marginLeft:'60px',
-            lineHeight: '12px',
-            marginTop:'-440px',
-            width:'100px'
-            
-          },
-          '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
-        
-            marginLeft:'80px',
-            lineHeight: '18px',
-            marginTop:'-520px',
-            width:'100px'
-           
-   
-         },
-         '@media screen and (min-width: 1280px) and (max-width:1400px)': {
-          marginLeft:'100px',
-            lineHeight: '18px',
-            marginTop:'-520px',
-            width:'100px'
-        }
-         
-      }}>
-        <Text fontFamily='Poppins' as='b' color='white' fontSize='2xl' css={{
-          
-          '@media screen and (min-width: 300px) and (max-width: 500px)': 
-          
-          {
-            
-            fontSize:'4px',
-            
-          },
-          '@media screen and (min-width: 700px) and (max-width: 920px)': 
-          
-          {
-            
-            fontSize:'12px',
-            
-          },
-          '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
-        
-            fontSize:'16px'
-           
-   
-         }
-          
-
-          
-          
-          }}>First Stage Cutoff and Separation</Text>
-      </Box>
-      </Fade>
-
-      <Fade>
-      <Box w='250px' position='absolute' marginTop='-720px' marginLeft='800px' css={{
-        '@media screen and (min-width: 300px) and (max-width: 500px)': {
-            
-          marginLeft:'140px',
-          lineHeight: '2px',
-          marginTop:'-480px',
-          width:'60px'
-          
-          
-        },
-        '@media screen and (min-width: 700px) and (max-width: 920px)': {
-            
-          marginLeft:'340px',
-            lineHeight: '12px',
-            marginTop:'-570px',
-            width:'100px'
-          
-          
-        },
-        '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
-        
-          marginLeft:'420px',
-          lineHeight: '18px',
-          marginTop:'-650px',
-          width:'100px'
-         
- 
-       }, '@media screen and (min-width: 1280px) and (max-width:1400px)': {
-        marginLeft:'570px',
-          lineHeight: '18px',
-          marginTop:'-690px',
-          width:'100px'
-      }
-
-      }}>
-        <Text color='white' fontFamily='Poppins' as='b' fontSize='2xl' css={{
-          
-          '@media screen and (min-width: 300px) and (max-width: 500px)': 
-          
-          {
-            
-            fontSize:'4px',
-            
-          },
-          '@media screen and (min-width: 700px) and (max-width: 920px)': 
-          
-          {
-            
-            fontSize:'12px',
-            
-          }, '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
-        
-            fontSize:'16px'
-           
-   
-         }
-          
-          }}>Second Stage Separation</Text>
-      </Box>
-      </Fade>
       
-      <Fade>
-      <Box w='250px' position='absolute' marginTop='-770px' marginLeft='1040px' css={{
-        '@media screen and (min-width: 300px) and (max-width: 500px)': {
-            
-          marginLeft:'240px',
-          lineHeight: '2px',
-          marginTop:'-500px',
-          width:'60px'
-          
-          
-        },
-        '@media screen and (min-width: 700px) and (max-width: 920px)': {
-            
-          marginLeft:'520px',
-            lineHeight: '12px',
-            marginTop:'-600px',
-            width:'100px'
-          
-          
-        },
-        '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
-        
-          marginLeft:'720px',
-          lineHeight: '18px',
-          marginTop:'-700px',
-          width:'100px'
-         
- 
-       }, '@media screen and (min-width: 1280px) and (max-width:1400px)': {
-        marginLeft:'760px',
-        lineHeight: '18px',
-        marginTop:'-710px',
-        width:'100px'
-      }
-
-      }}>
-        <Text color='white' fontFamily='Poppins' as='b' fontSize='2xl' css={{
-          
-          '@media screen and (min-width: 300px) and (max-width: 500px)': 
-          
-          {
-            
-            fontSize:'4px',
-            
-          },
-          '@media screen and (min-width: 700px) and (max-width: 920px)': 
-          
-          {
-            
-            fontSize:'12px',
-            
-          },
-          '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
-        
-            fontSize:'16px'
-           
-   
-         }
-          
-          }}>Orbit Insertion</Text>
-      </Box>
-      </Fade>
-
-      <Fade>
-      <Box w='250px' position='absolute' marginTop='-550px' marginLeft='1120px' css={{
-        '@media screen and (min-width: 300px) and (max-width: 500px)': {
-            
-          marginLeft:'300px',
-          lineHeight: '2px',
-          marginTop:'-410px',
-          width:'40px'
-          
-          
-        },
-        '@media screen and (min-width: 700px) and (max-width: 920px)': {
-            
-          marginLeft:'640px',
-          lineHeight: '12px',
-          marginTop:'-410px',
-          width:'60px'
-          
-          
-        },
-        '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
-        
-          marginLeft:'720px',
-          lineHeight: '18px',
-          marginTop:'-380px',
-          width:'100px'
-         
- 
-       },
-       '@media screen and (min-width: 1280px) and (max-width:1400px)': {
-        marginLeft:'790px',
-          lineHeight: '18px',
-          marginTop:'-560px',
-          width:'100px'
-      }, '@media screen and (min-width: 1400px)': {
-        marginLeft:'1090px',
-          lineHeight: '24px',
-          marginTop:'-595px',
-          width:'100px'
-      }
-
-      }}>
-        <Text color='white' fontFamily='Poppins' as='b' fontSize='2xl' css={{
-          
-          '@media screen and (min-width: 300px) and (max-width: 500px)': 
-          
-          {
-            
-            fontSize:'4px',
-            
-          },
-          '@media screen and (min-width: 700px) and (max-width: 920px)': {
-            fontSize:'12px'
-          },
-          '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
-        
-            fontSize:'16px'
-           
-   
-         }
-          
-          }}>Second Stage Burnup</Text>
-      </Box>
-      </Fade>
-
-      <Fade>
-      <Box w='250px' position='absolute' marginTop='-280px' marginLeft='1040px' css={{
-        '@media screen and (min-width: 300px) and (max-width: 500px)': {
-            
-          marginLeft:'200px',
-          lineHeight: '2px',
-          marginTop:'-400px',
-          width:'40px'
-          
-          
-        },
-        '@media screen and (min-width: 700px) and (max-width: 920px)': {
-            
-          marginLeft:'420px',
-          lineHeight: '12px',
-          marginTop:'-420px',
-          width:'60px'
-          
-          
-        },
-        '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
-        
-          marginLeft:'520px',
-          lineHeight: '18px',
-          marginTop:'-410px',
-          width:'100px'
-         
- 
-       },'@media screen and (min-width: 1280px) and (max-width:1400px)': {
-        marginLeft:'645px',
-        lineHeight: '18px',
-        marginTop:'-420px',
-        width:'100px'
-      }
-      }}>
-        <Text color='white' fontFamily='Poppins' as='b' fontSize='2xl' css={{
-          
-          '@media screen and (min-width: 300px) and (max-width: 500px)': 
-          
-          {
-            
-            fontSize:'4px',
-            
-          },
-          '@media screen and (min-width: 700px) and (max-width: 920px)': 
-          
-          {
-            
-            fontSize:'12px',
-            
-          },
-          '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
-        
-            fontSize:'16px'
-           
-   
-         },
-         
-          
-          
-          
-          }}>First Stage Recover</Text>
-      </Box>
-      </Fade>
-
-
-      <WaveTwo />
-        
-
-      <Box bg='linear-gradient(to bottom, rgba(0, 0, 255, 0.3), rgba(0, 0, 128, 0.3))' w='40vm' h='700' zIndex='4' position='absolute' marginTop='-840px' padding='4px' borderRight='1px solid gray' css={{
-            '@media screen and (min-width: 300px) and (max-width: 500px)': {
-            
-              marginTop:'-70px',
-              marginLeft:'18%'
-              
-              
-            },
-            '@media screen and (min-width: 700px) and (max-width: 920px)': {
-            
-              marginTop:'-20px',
-              marginLeft:'35%',
-              
-              
-              
-            },
-            '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
-        
-              marginTop:'40px',
-              marginLeft:'35%',
-             
-     
-           },'@media screen and (min-width: 1280px) and (max-width:1400px)': {
-            marginTop:'-10px',
-            marginLeft:'40%',
-          }, '@media screen and (min-width: 1400px)': {
-            marginTop:'150px',
-            marginLeft:'40%',
-          },
-            position:'absolute',
-          
-           marginTop:'-100px'
-
-
-
-      }}>
-        <Fade>
-        <Box  textAlign='right' padding='5px'  w='250px'>
-          <Text color='white' fontFamily='Poppins' fontSize='md' marginRight='160px'>LEO</Text>
-          <Text color='white' fontFamily='Poppins' marginTop='-25px' >600km</Text>
-        </Box>
-        </Fade>
-        
-        <Fade>
-        <Box textAlign='right' padding='5px' marginTop='50px' w='250px'>
-          <Text color='white' fontFamily='Poppins' fontSize='md' marginRight='150px'>Orbit Insertion</Text>
-          <Text color='white' fontFamily='Poppins' marginTop='-25px' >200 - 600km</Text>
-        </Box>
-        </Fade>
-
-        <Fade>
-        <Box textAlign='right' padding='5px' marginTop='20px' w='250px'>
-          <Text color='white' fontFamily='Poppins' fontSize='md' marginRight='150px'>Second Stage Cutoff</Text>
-          <Text color='white' fontFamily='Poppins' marginTop='-25px' >150 - 500km</Text>
-        </Box>
-        </Fade>
-        
-        <Fade>
-        <Box textAlign='right' padding='5px' marginTop='70px' w='260px'>
-          <Text color='white' fontFamily='Poppins' fontSize='md' marginRight='150px'> Beginning of Microgravity</Text>
-          <Text color='white' fontFamily='Poppins' marginTop='-25px' >80km</Text>
-        </Box>
-        </Fade>
-
-        <Fade>
-        <Box textAlign='right' padding='5px' marginTop='40px' w='250px'>
-          <Text color='white' fontFamily='Poppins' fontSize='md' marginRight='150px'>First Stage Cutoff and Separation</Text>
-          <Text color='white' fontFamily='Poppins' marginTop='-25px' >50km</Text>
-        </Box>
-        </Fade>
-
-        <Fade>
-        <Box  textAlign='right' padding='5px' marginTop='60px' w='250px'>
-          <Text color='white' fontFamily='Poppins' fontSize='md' marginRight='150px'>Pitch Maneuver</Text>
-          <Text color='white' fontFamily='Poppins' marginTop='-25px' >0.4km</Text>
-        </Box>
-        </Fade>
-
-        <Fade>
-        <Box textAlign='right' padding='5px' marginTop='4px' w='250px'>
-          <Text color='white' fontFamily='Poppins' fontSize='md' marginRight='150px'>Litftoff</Text>
-          <Text color='white' fontFamily='Poppins' marginTop='-25px' >0.8km</Text>
-        </Box>
-        </Fade>
-      </Box>
       
       
     
@@ -1111,7 +722,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       <div style={{ 
         width: '60%', height: '4%', position: 'absolute', marginTop: '1040px'}}>
           <Center>
-            <Text color='white' fontSize='4xl' fontFamily='Poppins'>Our Partners</Text>
+            <Text color='white' fontSize='4xl' fontFamily='Poppins'>Affiliated With</Text>
           </Center>
         <Box marginLeft='400px'>
           <Image src='/images/uoft.png' layout='fill' objectFit='contain' alt='atmosphere' />
