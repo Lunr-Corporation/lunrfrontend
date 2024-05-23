@@ -118,7 +118,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       
       <Box bg='#084c80' w='100vw' h='800px' position='relative'>
         <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-          <Image src='/images/nova.jpeg' layout='fill' objectFit='cover' alt='rocket' />
+          <Image src='/images/home.png' layout='fill' objectFit='cover' alt='rocket' />
         </div>
         <Box position='absolute' bottom='0' width='100%' mb='40px' display='flex' justifyContent='center'>
           <Button backgroundColor="transparent" border="2px solid white" p='30px'>
