@@ -147,13 +147,13 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         
       >
         <Fade>
-        <Text bg='none' as='b' fontSize={{ base: 'md', md: 'xl' }} fontFamily='Poppins'>What it Means to Touch The Sky</Text>
+        <Text bg='none' as='b' fontSize={{ base: 'md', md: 'xl' }} fontFamily='Poppins'>Redefining What It Means to Touch The Sky</Text>
         <Text mt={2} fontFamily='Poppins' color='white'>
-          Lunr aims to touch the stars by launching to LEO at 600 km in altitude even in the frigid temperatures of Canada. Lunr wants redefine what space-travel is and that it is possible to do so anywhere rather than a select few countries.
+        At LUNR, innovation meets ambition. Founded on the belief that space should be within everyone's reach, we are breaking barriers and challenging norms. From the serene wilderness of Canada, we launch dreams into orbit — 600 kilometers above Earth into LEO. Explore how we are transforming the landscape of Canadian aerospace, one launch at a time.
         </Text>
         <Button backgroundColor="transparent" border="2px solid white" p='30px' marginTop='30px'>
         <ScrollLink to='mission' smooth={true} duration={500}>
-          <Text as='b' fontSize='2xl' fontFamily='Poppins' color='white'>Learn More</Text>
+          <Text as='b' fontSize='2xl' fontFamily='Poppins' color='white'>Learn More about Our Mission</Text>
           </ScrollLink>
         </Button>
         </Fade>
@@ -183,7 +183,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           <Fade>
           <Text bg='none' as='b' fontSize={{ base: 'md', md: 'xl' }} fontFamily='Poppins' color='white'>Meet Sirius</Text>
           <Text mt={2} fontFamily='Poppins' color='white'>
-            Named after the brightest star in Earth&apos;s night sky, Sirius will be a two-stage launch vehicle powered by a 9-cluster of high-performance liquid rocket engines, designed for efficient payload delivery to Low Earth Orbit (LEO) and beyond, marking a milestone as one of Canada&apos;s first orbital-class launch vehicles.
+          Named after the brightest star in Earth&apos;s night sky, Sirius will be a two-stage launch vehicle designed for efficient payload delivery to Low Earth Orbit (LEO) and beyond, marking a milestone as one of Canada&apos;s first orbital-class launch vehicles.
           </Text>
           
           <Button backgroundColor="transparent" border="2px solid white" p='30px' marginTop='30px'>
