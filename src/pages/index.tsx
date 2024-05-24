@@ -170,7 +170,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           
           <Button backgroundColor="transparent" border="2px solid white" p='30px' marginTop='100px'>
           <ScrollLink to='aboutLunr' smooth={true} duration={500}>
-          <Text as='b' fontSize='2xl' fontFamily='Poppins' color='white'>Get Started</Text>
+          <Text as='b' fontSize='2xl' fontFamily='Poppins' color='white'>Learn More</Text>
           </ScrollLink>
           </Button>
           
@@ -259,7 +259,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
               '@media screen and (min-width: 300px) and (max-width: 500px)': {
                 position: 'relative',
                 marginLeft: '-6px',
-                marginTop:'3400px'
+                marginTop:'3600px'
                 
                 
               },
@@ -374,13 +374,13 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             
             
             }}>
-          <Slide direction='left'>
+          <Fade>
           <Text as='b' fontFamily='Poppins' fontSize='2xl' margin='20px' color='white'>Payload</Text>
           <Text color='white' fontFamily='Poppins'  marginLeft='20px' fontSize='lg' marginBottom='10px'>Designed for Sclability</Text>
           <Text color='#084c80' fontFamily='Poppins'  marginLeft='20px' as='b' fontSize='4xl' marginBottom='10px'>200kg/441 lb</Text>
           <Text color='white' fontFamily='Poppins'  marginLeft='20px' fontSize='lg' >Interchangeable payload adapters</Text>
           
-          </Slide>
+          </Fade>
         </Box>
 
         <Box width='270px' zIndex='6' position='relative' marginTop={{ base: '0px', md: '60px' }} marginLeft={{ base: '0px', lg:'300px' }} css={{
@@ -408,13 +408,13 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             }
     
     }}>
-    <Slide direction='left'>
+    <Fade>
     <Text fontFamily='Poppins'  as='b' fontSize='2xl' margin='20px' color='white'>Avionics</Text>
     <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg' marginBottom='10px'> Multiple Flight Computers</Text>
     <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg' marginBottom='10px'> Redundancy</Text>
     <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg' marginBottom='10px'> Simple System Architecture</Text>
     <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg' marginBottom='10px'> TVC and RCS Integration</Text>
-    </Slide>
+    </Fade>
   </Box>
 
   <Box width='210px' zIndex='6' position='absolute' marginLeft={{ md: '450px', sm: '0px', lg:'1120px' }} marginTop={{ base: '0px', md: '-410px' }} css={{
@@ -454,12 +454,12 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     
     }}>
       
-          <Slide direction='right'>
+          <Fade>
           <Text fontFamily='Poppins'  as='b' fontSize='2xl' margin='20px' color='white'>Structure</Text>
           <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg' marginBottom='10px'>Height: 20m</Text>
           <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'>Diameter: 2.3m</Text>
           
-          </Slide>
+          </Fade>
         </Box>
 
         <Box width='220px' zIndex='6' position='absolute' marginLeft={{ md: '450px', sm: '0px', lg:'1120px' }} marginTop={{ base: '0px', md: '-410px' }} css={{
@@ -499,12 +499,12 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     
     }}>
       
-          <Slide direction='right'>
+          <Fade>
             <Center>
           <Text fontFamily='Poppins'  as='b' fontSize='35px' color='#084c80'>Second Stage</Text>
           </Center>
           
-          </Slide>
+          </Fade>
         </Box>
 
 
@@ -547,13 +547,13 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     
     }}>
       
-          <Slide direction='right'>
+          <Fade>
           <Text fontFamily='Poppins'  as='b' fontSize='2xl' margin='20px' color='white'>Liquid Engine</Text>
           <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg' marginBottom='10px'> Gas Generator Cycle</Text>
           <Text fontFamily='Poppins'  color='#084c80' marginLeft='20px' fontSize='lg' marginTop='3px' as='b' marginBottom='10px'> RP-1 – Liquid Fuel</Text>
           <Text fontFamily='Poppins'  color='#084c80' marginLeft='20px' fontSize='lg' as='b'> LOX – Liquid oxygen (Oxidizer)</Text>
           
-          </Slide>
+          </Fade>
         </Box>
 
         <Box width='270px' zIndex='6' position='absolute'  marginTop={{ base: '0px', md: '60px' }} marginLeft={{ base: '0px',  md:'300px' }} css={{
@@ -583,11 +583,11 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
               marginTop: '40px'
             }
     }}>   
-          <Slide direction='left'>
+          <Fade>
           <Text fontFamily='Poppins'  as='b' fontSize='2xl' margin='20px' color='white'>Recovery Options</Text>
 
           <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg' marginBottom='10px'> First Designed for Parachute for Capture Recovery.</Text>
-          </Slide>
+          </Fade>
           
         </Box>
         
@@ -627,12 +627,12 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     
     
     }}>
-          <Slide direction='right'>
+          <Fade>
           <Text fontFamily='Poppins'  as='b' fontSize='2xl' margin='20px' color='white'>Aerodynamics</Text>
           <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg' marginBottom='10px'> Sleek Design </Text>
           <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg' marginBottom='10px'> Reduced Aerodynamic Load</Text>
           <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> Controls Fins on First Stage</Text>
-          </Slide>
+          </Fade>
         </Box>
 
         <Box  width='200px' zIndex='6' position='absolute' marginLeft={{ md: '450px', sm: '150px', lg:'1120px' }} marginTop={{ base: '0px', md: '250px' }} css={{
@@ -674,10 +674,10 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     
     
     }}>
-          <Slide direction='right'>
+          <Fade>
           <Text fontFamily='Poppins'  as='b' fontSize='35px'  color='#084c80'>First Stage</Text>
           
-          </Slide>
+          </Fade>
         </Box>
 
         <Box width='220px' zIndex='6' position='absolute' marginLeft={{ md: '450px', sm: '150px', lg:'1120px' }} marginTop={{ base: '0px', md: '250px' }} css={{
@@ -717,7 +717,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     
     
     }}>
-          <Slide direction='right'>
+          <Fade>
           <Text fontFamily='Poppins'  as='b' fontSize='2xl' margin='20px' color='white'>Materials</Text>
             <Text color='#084c80' fontSize='lg' fontFamily='Poppins'   marginLeft='20px' >Solid Rocket Nozzle:</Text> 
             <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg' marginBottom='10px'> Graphite  </Text>
@@ -725,7 +725,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg' >Inconel 718  </Text>
             <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg' >Chromium Zirconium </Text>
             <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg' >Aluminum Alloy </Text>
-          </Slide>
+          </Fade>
         </Box>
 
 
@@ -765,7 +765,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
 
 
 
-          <Slide direction='right'>
+          <Fade>
           <Text fontFamily='Poppins'  as='b' fontSize='2xl' margin='20px' color='white'>Solid Engine</Text>
           <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg' > Researched </Text>
           <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg' marginBottom='10px'>Propellants</Text>
@@ -774,7 +774,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg'> Rod and Tube grain design: </Text>
           <Text fontFamily='Poppins'  color='white' marginLeft='40px' fontSize='lg'> HTPB </Text>
           <Text fontFamily='Poppins'  color='white' marginLeft='40px' fontSize='lg'> Aluminum Powder</Text>
-          </Slide>
+          </Fade>
         </Box>
 
         
@@ -870,11 +870,33 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     
       <Center>
 
-      <div style={{marginTop:'1400px'}}>
+      <Box css={{
+      '@media screen and (min-width: 300px) and (max-width: 500px)': {
+            
+        marginTop:'200px'
         
-      </div>
+        
+      },
+      '@media screen and (min-width: 700px) and (max-width: 920px)': {
+            
+        marginTop:'200px'
+        
+        
+      },
+      '@media screen and (min-width: 1024px) and (max-width: 1280px)': {
+        
+         marginTop:'200px'
+        
+
+      }, '@media screen and (min-width: 1280px) and (max-width:1400px)': {
+        marginTop:'600px'
+      }
+      
+    }}>
+        
+      </Box>
       <div style={{ 
-        width: '60%', height: '4%', position: 'absolute', marginTop: '140px'}}>
+        width: '60%', height: '4%', position: 'absolute', marginTop: '0px'}}>
           <Center>
             <Text color='white' fontSize='3xl' fontFamily='Poppins'>Affiliated With</Text>
           </Center>

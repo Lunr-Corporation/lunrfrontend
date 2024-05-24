@@ -155,13 +155,13 @@ export default function Contact() {
 
             <Flex marginBottom='40px' marginTop='40px'>
                 <Link href='https://www.instagram.com/lunrcorp/'>
-                <Button color='white' fontFamily='Poppins' fontSize='60px' background='none'>
+                <Button _hover={{ background: 'rgba(8, 76, 128, 0.1)' }} color='white' fontFamily='Poppins' fontSize='60px' background='none'>
                     <FaInstagram />
                 </Button>
                 </Link>    
     
                 <Link href='https://www.linkedin.com/company/lunrcorp/'>
-                <Button color='white' fontFamily='Poppins' fontSize='60px' background='none'>
+                <Button _hover={{ background: 'rgba(8, 76, 128, 0.1)' }} color='white' fontFamily='Poppins' fontSize='60px' background='none'>
                     <FaLinkedinIn />
                 </Button>
                 </Link>
@@ -218,13 +218,13 @@ export default function Contact() {
             <Center>
             <Flex marginBottom='40px'>
             <Link href='https://www.instagram.com/lunrcorp/'>
-              <Button color='#084c80' fontFamily='Poppins' fontSize='40px' background='none'>
+              <Button  _hover={{ background: 'rgba(8, 76, 128, 0.1)' }} color='#084c80' fontFamily='Poppins' fontSize='40px' background='none'>
                 <FaInstagram />
               </Button>
              </Link>    
   
             <Link href='https://www.linkedin.com/company/lunrcorp/'>
-              <Button color='#084c80' fontFamily='Poppins' fontSize='40px' background='none'>
+              <Button _hover={{ background: 'rgba(8, 76, 128, 0.1)' }}color='#084c80' fontFamily='Poppins' fontSize='40px' background='none'>
                 <FaLinkedinIn />
               </Button>
             </Link>
