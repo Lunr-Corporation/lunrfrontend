@@ -165,7 +165,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             
             
                     }}
-          >Empowering Humanity's Next Great Leap</Text>
+          >Empowering Humanity&apos;s Next Great Leap</Text>
           </Fade>
           
           <Button backgroundColor="transparent" border="2px solid white" p='30px' marginTop='100px'>
@@ -200,7 +200,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         <Fade>
         <Text bg='none' as='b' fontSize={{ base: 'md', md: 'xl' }} fontFamily='Poppins'>Redefining What It Means to Touch The Sky</Text>
         <Text mt={2} fontFamily='Poppins' color='white'>
-        At LUNR, innovation meets ambition. Founded on the belief that space should be within everyone's reach, we are breaking barriers and challenging norms. From the serene wilderness of Canada, we launch dreams into orbit — 600 kilometers above Earth into LEO. Explore how we are transforming the landscape of Canadian aerospace, one launch at a time.
+        At LUNR, innovation meets ambition. Founded on the belief that space should be within everyone&apos;s reach, we are breaking barriers and challenging norms. From the serene wilderness of Canada, we launch dreams into orbit — 600 kilometers above Earth into LEO. Explore how we are transforming the landscape of Canadian aerospace, one launch at a time.
         </Text>
         <Button backgroundColor="transparent" border="2px solid white" p='30px' marginTop='30px'>
         <ScrollLink to='mission' smooth={true} duration={500}>

@@ -89,9 +89,9 @@ export default function Contact() {
       <Flex direction={{ base: 'column', md: 'row' }} align='center' justify='center' wrap='wrap' zIndex='2'>
         <Image src='/images/logo.png' width={200} height={400} alt='logo' />
         <Button background='None' _hover={{ background: 'rgba(8, 76, 128, 0.1)'}} zIndex='10'>
-          <ScrollLink to='aboutLunr' smooth={true} duration={500}>
+        <Link href='/'>
           <Text as='b' fontFamily='Poppins' fontSize={{ base: 'lg', md: 'lg' }} my={{ base: 3, md: 0 }} mx={{ base: 2, md: 15 }} color='white'>About Lunr</Text>
-          </ScrollLink>
+          </Link>
         </Button>
         <Button background='none' _hover={{ background: 'rgba(8, 76, 128, 0.1)'}} zIndex='10'>
           <Link href='./learnMore'>
