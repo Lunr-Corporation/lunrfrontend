@@ -136,10 +136,41 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         
       >
           <Fade>
-          <Text bg='none' as='b' fontSize='80px'fontFamily='Poppins' color='white'>Empowering Humanity's Next Great Leap</Text>
+          <Text bg='none' as='b' fontFamily='Poppins' color='white' css={{
+                          '@media screen and (min-width: 300px) and (max-width: 500px)': {
+                            fontSize:'42px'
+                            
+                            
+                          },
+                          '@media screen and (min-width: 700px) and (max-width: 920px)': {
+                            position: 'relative',
+                            marginLeft: '40px',
+                            marginTop:'-300px',
+                            width:'75%'
+                            
+                            
+                          },
+                          '@media screen and (min-width: 1024px) and (max-width: 1400px)': {
+                            position: 'relative',
+                            marginLeft: '-6px',
+                            marginTop:'-230px',
+                            width:'55%'
+                
+                          },'@media screen and (min-width: 1280px) and (max-width:1400px)': {
+                            position: 'relative',
+                            marginLeft: '-6px',
+                            marginTop:'-230px',
+                            width:'45%'
+                          }, '@media screen and (min-width:1400px)': {
+                            fontSize:'80px'
+                          }
+            
+            
+                    }}
+          >Empowering Humanity's Next Great Leap</Text>
           </Fade>
           
-          <Button backgroundColor="transparent" border="2px solid white" p='30px' marginTop='60px'>
+          <Button backgroundColor="transparent" border="2px solid white" p='30px' marginTop='100px'>
           <ScrollLink to='aboutLunr' smooth={true} duration={500}>
           <Text as='b' fontSize='2xl' fontFamily='Poppins' color='white'>Get Started</Text>
           </ScrollLink>
@@ -175,7 +206,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         </Text>
         <Button backgroundColor="transparent" border="2px solid white" p='30px' marginTop='30px'>
         <ScrollLink to='mission' smooth={true} duration={500}>
-          <Text as='b' fontSize='2xl' fontFamily='Poppins' color='white'>Learn More about Our Mission</Text>
+          <Text as='b' fontSize='2xl' fontFamily='Poppins' color='white'>Our Mission</Text>
           </ScrollLink>
         </Button>
         </Fade>
@@ -230,7 +261,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
               '@media screen and (min-width: 300px) and (max-width: 500px)': {
                 position: 'relative',
                 marginLeft: '-6px',
-                marginTop:'2200px'
+                marginTop:'3400px'
                 
                 
               },
@@ -317,7 +348,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             '@media screen and (min-width: 300px) and (max-width: 500px)': {
               marginLeft: '0px',
               marginBottom:'40px',
-              marginTop:'40px'
+              marginTop:'350px'
               
               
             },
@@ -758,7 +789,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             
          position:'absolute',
           fontSize:'30px',
-          marginTop:'1900px'
+          marginTop:'2900px'
           
           
         },
@@ -794,7 +825,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     <Box css={{
       '@media screen and (min-width: 300px) and (max-width: 500px)': {
             
-        marginTop:'700px'
+        marginTop:'1200px'
         
         
       },
@@ -832,7 +863,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       <div style={{ 
         width: '60%', height: '4%', position: 'absolute', marginTop: '140px'}}>
           <Center>
-            <Text color='white' fontSize='4xl' fontFamily='Poppins'>Affiliated With</Text>
+            <Text color='white' fontSize='3xl' fontFamily='Poppins'>Affiliated With</Text>
           </Center>
         <Box marginLeft='400px'>
           <Image src='/images/uoft.png' layout='fill' objectFit='contain' alt='atmosphere' />
@@ -857,7 +888,10 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
             <Text marginTop='-10px' fontSize='sm' fontFamily='Poppins' color='#084c80' marginBottom='10px'>© 2023 Lunr Corporation. All Rights Reserved.</Text>
             </Center>
             <Center>
-              <Text fontFamily='Poppins' color='#084c80' marginBottom='10px' fontSize='12px'>Visit www.OnGuardOnline.gov for social networking safety tips for parents and youth.</Text>
+              <Text fontFamily='Poppins' color='#084c80' marginBottom='10px' fontSize='12px'>Visit www.OnGuardOnline.gov </Text>
+            </Center>
+            <Center>
+            <Text fontFamily='Poppins' color='#084c80' marginBottom='10px' fontSize='12px'>for social networking safety tips for parents and youth.</Text>
             </Center>
             
             <Center>
