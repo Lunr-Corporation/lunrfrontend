@@ -858,7 +858,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       }
       
     }}>
-      <Image src='/images/MissionUpdated.png' layout='fill' objectFit='contain' alt='atmosphere' />
+      <Image src='/images/missionUpdated.png' layout='fill' objectFit='contain' alt='mission' />
     </Box>
   </div>
 </Box>
