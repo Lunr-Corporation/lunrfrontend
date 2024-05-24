@@ -182,9 +182,9 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       </Box>
       
     </Box>
-      <Box bg='none' w='100vw' h='800px' position='relative'>
-        <div style={{ width: '100%', height: '100%', position: 'relative', zIndex:'20' }}>
-          <Image src='/images/rocketimage1.jpeg' layout='fill' objectFit='cover' alt='atmosphere' />
+      <Box bg='none' w='100vw' h='700px' position='relative'>
+        <div style={{ width: '100%', height: '100%', position: 'relative', zIndex:'20'}}>
+          <Image src='/images/test4.png' layout='fill' objectFit='cover' alt='atmosphere' />
         </div>
         
         <Box
