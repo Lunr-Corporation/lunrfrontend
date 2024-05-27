@@ -82,7 +82,7 @@ LUNR Company Website revamped.
 ### Built With
 
 * [![Next][Next.js]][Next-url]
-* * [![Typescript][Typescript][]
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
