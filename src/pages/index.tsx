@@ -586,7 +586,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
           <Fade>
           <Text fontFamily='Poppins'  as='b' fontSize='2xl' margin='20px' color='white'>Recovery Options</Text>
 
-          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg' marginBottom='10px'> First Designed for Parachute for Capture Recovery.</Text>
+          <Text fontFamily='Poppins'  color='white' marginLeft='20px' fontSize='lg' marginBottom='10px'> First Stage Designed for Parachute Capture Recovery.</Text>
           </Fade>
           
         </Box>
