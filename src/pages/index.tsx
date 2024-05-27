@@ -890,6 +890,8 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
 
       }, '@media screen and (min-width: 1280px) and (max-width:1400px)': {
         marginTop:'600px'
+      }, '@media screen and (min-width:1400px)': {
+        marginTop:'500px'
       }
       
     }}>
